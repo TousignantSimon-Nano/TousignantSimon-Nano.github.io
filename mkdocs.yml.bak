@@ -1,0 +1,122 @@
+site_name: Nano-ordinateurs 420-3A3-VI
+site_url: https://tousignantsimon-nano.github.io/
+repo_url: https://github.com/TousignantSimon-Nano/TousignantSimon-Nano.github.io
+
+nav:
+  - Accueil: index.md  
+  - Introduction et histoire : notes_de_cours/semaine_1.md  
+  - Raspberry pi, Fiche technique: raspberry_pi.md
+  - Resources :  
+      - Feuille de triche bash : feuille-triche-bash.md  
+      - Logiciels nécessaires : logiciels-necessaires.md
+  - Archives 2024 : 
+    - Sense Hat:
+      - Définitions: notes_de_cours/sense_hat/sense_hat.md  
+      - Émulateur: notes_de_cours/sense_hat/sense_emu.md  
+      - Interagir avec le Sense Hat: notes_de_cours/sense_hat/lancer_script.md
+      - Mettre un peu de couleur: notes_de_cours/sense_hat/couleur.md
+      - Afficher sur un pixel: notes_de_cours/sense_hat/affichage_pixel.md
+      - Utilisation du joystick: notes_de_cours/sense_hat/joystick.md
+      - Capteurs: notes_de_cours/sense_hat/capteur.md
+    - Esp32:
+      - Intro ESP32: notes_de_cours/esp32/esp32.md
+      - Les broches du ESP32: notes_de_cours/esp32/esp32_pin.md
+      - Installation Arduino IDE: notes_de_cours/esp32/setup.md
+      - Notre premier sketch: notes_de_cours/esp32/premier_sketch.md
+      - Le moniteur série: notes_de_cours/esp32/serial_monitor.md
+      - Pause dans le traitement / millis(): notes_de_cours/esp32/millis.md
+      - Connexion Bluetooth: notes_de_cours/esp32/bluetooth.md
+      - Récepteurs:
+          - DEL: notes_de_cours/esp32/del.md
+          - Écran LCD: notes_de_cours/esp32/lcd.md
+      - Capteurs:
+          - Boutons: notes_de_cours/esp32/bouton.md
+          - Potentiomètre: notes_de_cours/esp32/potentiometre.md
+          # - joystick: notes_de_cours/esp32/joystick.md
+          - Servomoteurs: notes_de_cours/esp32/servo.md
+      - PWM et DAC: notes_de_cours/esp32/pwm_dac.md
+    - Lego Ev3:
+      - Intro Lego EV3: notes_de_cours/lego_ev3/lego_ev3.md
+      - ev3dev: notes_de_cours/lego_ev3/ev3dev.md
+      - Installation: notes_de_cours/lego_ev3/ev3dev_installation.md
+      - python-ev3dev: notes_de_cours/lego_ev3/ev3dev_python.md
+      - Wifi: notes_de_cours/lego_ev3/ev3dev_wifi.md
+      - Remote execution: notes_de_cours/lego_ev3/ev3dev_RPyC.md
+
+  #- 'Exercices':
+  #    - Exercice 01 - Les nano-ordinateurs: exercices/ex01_enonce.md
+  #    - Exercice 02 - RetroPie: exercices/ex02_enonce.md
+  #    - Exercice 03 - Exploration Raspberry pi: exercices/ex03_enonce.md
+      #- Formatif formel : exercices/formatif_formel.md
+  #    - Exercice 04 - Sense Hat Dice: exercices/ex04_enonce.md
+  #    - Exercice 05 - Sense Hat Capteurs: exercices/ex05_enonce.md
+  #    - Exercice 06 - ESP32 - DEL: exercices/ex06_enonce.md
+  #    - Exercice 07 - ESP32 - Boutons: exercices/ex07_enonce.md
+  #    - Exercice 08 - ESP32 - Servomoteur et DAC: exercices/ex08_enonce.md
+  #    - Exercice 09 - ESP32 - Jeu Simon: exercices/ex09_enonce.md
+  #    - Exercice 10 - ESP32 - Bluetooth: exercices/ex10_enonce.md
+  #    - Exercice 11 - Lego EV3 - Démarrage ev3dev: exercices/ex11_enonce.md
+  #    - Exercice 12 - Lego EV3 - Compétition de bulldozer: exercices/ex12_enonce.md
+
+theme: 
+  name: material
+  language: fr
+  palette:
+    - scheme: default
+      primary: blue grey
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - content.code.copy
+  icon:
+    logo: fontawesome/solid/cubes
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - neoteroi.cards
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - css/extra.css
+  - css/all.css
+  - css/colors.css
+  - css/cards.css
+
+plugins:
+  - search: {}
+# Permettre la protection du site par un mot de passe global
+#     - encryptcontent:
+#         global_password: 'carineavec1C'
+#         remember_password: True
+#         title_prefix: ''
+#         summary: 'Le contenu de cette page est protégé'
+#         encryption_info_message: "Veuillez entrer votre mot de passe"
+#         placeholder: ''
+#         decryption_failure_message: 'Mot de passe invalide, veuillez contacter votre enseignant en cas de problèmes'
