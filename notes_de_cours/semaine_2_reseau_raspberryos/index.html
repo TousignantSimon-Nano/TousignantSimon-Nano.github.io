@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://tousignantsimon-nano.github.io/notes_de_cours/lego_ev3/ev3dev_RPyC/">
+        <link rel="canonical" href="https://tousignantsimon-nano.github.io/notes_de_cours/semaine_2_reseau_raspberryos/">
       
       
-        <link rel="prev" href="../ev3dev_wifi/">
+        <link rel="prev" href="../semaine_2_mount_umount/">
       
       
+        <link rel="next" href="../../raspberry_pi/">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Remote execution - Nano-ordinateurs 420-3A3-VI</title>
+        <title>Configuration du réseau avec networkmanager - Nano-ordinateurs 420-3A3-VI</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -111,15 +113,15 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-      <link rel="stylesheet" href="../../../css/all.css">
+      <link rel="stylesheet" href="../../css/all.css">
     
-      <link rel="stylesheet" href="../../../css/colors.css">
+      <link rel="stylesheet" href="../../css/colors.css">
     
-      <link rel="stylesheet" href="../../../css/cards.css">
+      <link rel="stylesheet" href="../../css/cards.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -145,7 +147,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#controle-a-distance-a-laide-du-module-python-rpyc-remote-python-control" class="md-skip">
+        <a href="#gestion-reseau-sur-raspberry-pi-os-bookworm-debian-12-version-detaillee-avec-fichiers" class="md-skip">
           Aller au contenu
         </a>
       
@@ -161,7 +163,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../../.." title="Nano-ordinateurs 420-3A3-VI" class="md-header__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
+    <a href="../.." title="Nano-ordinateurs 420-3A3-VI" class="md-header__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M448 205.8c-14.8 9.8-31.8 17.7-49.5 24-47 16.8-108.7 26.2-174.5 26.2s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V288c0 44.2 100.3 80 224 80s224-35.8 224-80zm0-77.8V80c0-44.2-100.3-80-224-80S0 35.8 0 80v48c0 44.2 100.3 80 224 80s224-35.8 224-80m-49.5 261.8C351.6 406.5 289.9 416 224 416s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V432c0 44.2 100.3 80 224 80s224-35.8 224-80v-66.2c-14.8 9.8-31.8 17.7-49.5 24"/></svg>
@@ -181,7 +183,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Remote execution
+              Configuration du réseau avec networkmanager
             
           </span>
         </div>
@@ -286,7 +288,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -305,7 +307,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../semaine_1/" class="md-tabs__link">
+      <a href="../semaine_1/" class="md-tabs__link">
         
   
   
@@ -322,11 +324,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../semaine_2_depot/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../semaine_2_depot/" class="md-tabs__link">
           
   
   
@@ -344,7 +348,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../raspberry_pi/" class="md-tabs__link">
+      <a href="../../raspberry_pi/" class="md-tabs__link">
         
   
   
@@ -365,7 +369,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../feuille-triche-bash/" class="md-tabs__link">
+        <a href="../../feuille-triche-bash/" class="md-tabs__link">
           
   
   
@@ -381,8 +385,6 @@
   
   
   
-    
-  
   
     
     
@@ -390,13 +392,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../sense_hat/sense_hat/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../sense_hat/sense_hat/" class="md-tabs__link">
           
   
   
@@ -441,7 +441,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Nano-ordinateurs 420-3A3-VI" class="md-nav__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
+    <a href="../.." title="Nano-ordinateurs 420-3A3-VI" class="md-nav__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M448 205.8c-14.8 9.8-31.8 17.7-49.5 24-47 16.8-108.7 26.2-174.5 26.2s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V288c0 44.2 100.3 80 224 80s224-35.8 224-80zm0-77.8V80c0-44.2-100.3-80-224-80S0 35.8 0 80v48c0 44.2 100.3 80 224 80s224-35.8 224-80m-49.5 261.8C351.6 406.5 289.9 416 224 416s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V432c0 44.2 100.3 80 224 80s224-35.8 224-80v-66.2c-14.8 9.8-31.8 17.7-49.5 24"/></svg>
@@ -471,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -493,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_1/" class="md-nav__link">
+      <a href="../semaine_1/" class="md-nav__link">
         
   
   
@@ -512,24 +512,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -542,7 +547,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Semaine 2
@@ -556,7 +561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_2_depot/" class="md-nav__link">
+      <a href="../semaine_2_depot/" class="md-nav__link">
         
   
   
@@ -579,7 +584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_2_mount_umount/" class="md-nav__link">
+      <a href="../semaine_2_mount_umount/" class="md-nav__link">
         
   
   
@@ -599,10 +604,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../semaine_2_reseau_raspberryos/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Configuration du réseau avec networkmanager
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -613,6 +640,164 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-generalites" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Généralités
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-fichiers-de-configuration-exemples" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Fichiers de configuration – exemples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Fichiers de configuration – exemples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-ethernet-en-dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Ethernet en DHCP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-ethernet-en-ip-statique" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Ethernet en IP statique
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-wi-fi-en-dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      c) Wi-Fi en DHCP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-wi-fi-en-ip-statique" class="md-nav__link">
+    <span class="md-ellipsis">
+      d) Wi-Fi en IP statique
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-commandes-de-gestion-reseau" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Commandes de gestion réseau
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Commandes de gestion réseau">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-verifier-letat-des-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Vérifier l’état des interfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-liste-des-connexions-connues" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Liste des connexions connues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-connexion-wi-fi-rapide-dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      c) Connexion Wi-Fi rapide (DHCP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-connexion-ethernet-ip-statique" class="md-nav__link">
+    <span class="md-ellipsis">
+      d) Connexion Ethernet (IP statique)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-interface-semi-graphique" class="md-nav__link">
+    <span class="md-ellipsis">
+      e) Interface semi-graphique
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-notes-pratiques-pour-les-etudiants" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Notes pratiques pour les étudiants
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-comparatif-dhcp-vs-ip-statique" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Comparatif DHCP vs IP statique
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -632,7 +817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../raspberry_pi/" class="md-nav__link">
+      <a href="../../raspberry_pi/" class="md-nav__link">
         
   
   
@@ -695,7 +880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../feuille-triche-bash/" class="md-nav__link">
+      <a href="../../feuille-triche-bash/" class="md-nav__link">
         
   
   
@@ -718,7 +903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../logiciels-necessaires/" class="md-nav__link">
+      <a href="../../logiciels-necessaires/" class="md-nav__link">
         
   
   
@@ -745,29 +930,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -780,7 +960,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Archives 2024
@@ -835,7 +1015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/sense_hat/" class="md-nav__link">
+      <a href="../sense_hat/sense_hat/" class="md-nav__link">
         
   
   
@@ -858,7 +1038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/sense_emu/" class="md-nav__link">
+      <a href="../sense_hat/sense_emu/" class="md-nav__link">
         
   
   
@@ -881,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/lancer_script/" class="md-nav__link">
+      <a href="../sense_hat/lancer_script/" class="md-nav__link">
         
   
   
@@ -904,7 +1084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/couleur/" class="md-nav__link">
+      <a href="../sense_hat/couleur/" class="md-nav__link">
         
   
   
@@ -927,7 +1107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/affichage_pixel/" class="md-nav__link">
+      <a href="../sense_hat/affichage_pixel/" class="md-nav__link">
         
   
   
@@ -950,7 +1130,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/joystick/" class="md-nav__link">
+      <a href="../sense_hat/joystick/" class="md-nav__link">
         
   
   
@@ -973,7 +1153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/capteur/" class="md-nav__link">
+      <a href="../sense_hat/capteur/" class="md-nav__link">
         
   
   
@@ -1045,7 +1225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/esp32/" class="md-nav__link">
+      <a href="../esp32/esp32/" class="md-nav__link">
         
   
   
@@ -1068,7 +1248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/esp32_pin/" class="md-nav__link">
+      <a href="../esp32/esp32_pin/" class="md-nav__link">
         
   
   
@@ -1091,7 +1271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/setup/" class="md-nav__link">
+      <a href="../esp32/setup/" class="md-nav__link">
         
   
   
@@ -1114,7 +1294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/premier_sketch/" class="md-nav__link">
+      <a href="../esp32/premier_sketch/" class="md-nav__link">
         
   
   
@@ -1137,7 +1317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/serial_monitor/" class="md-nav__link">
+      <a href="../esp32/serial_monitor/" class="md-nav__link">
         
   
   
@@ -1160,7 +1340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/millis/" class="md-nav__link">
+      <a href="../esp32/millis/" class="md-nav__link">
         
   
   
@@ -1183,7 +1363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/bluetooth/" class="md-nav__link">
+      <a href="../esp32/bluetooth/" class="md-nav__link">
         
   
   
@@ -1247,7 +1427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/del/" class="md-nav__link">
+      <a href="../esp32/del/" class="md-nav__link">
         
   
   
@@ -1270,7 +1450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/lcd/" class="md-nav__link">
+      <a href="../esp32/lcd/" class="md-nav__link">
         
   
   
@@ -1342,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/bouton/" class="md-nav__link">
+      <a href="../esp32/bouton/" class="md-nav__link">
         
   
   
@@ -1365,7 +1545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/potentiometre/" class="md-nav__link">
+      <a href="../esp32/potentiometre/" class="md-nav__link">
         
   
   
@@ -1388,7 +1568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/servo/" class="md-nav__link">
+      <a href="../esp32/servo/" class="md-nav__link">
         
   
   
@@ -1419,7 +1599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/pwm_dac/" class="md-nav__link">
+      <a href="../esp32/pwm_dac/" class="md-nav__link">
         
   
   
@@ -1447,8 +1627,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1459,11 +1637,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
         
           
           <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
@@ -1479,7 +1657,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
             Lego Ev3
@@ -1493,7 +1671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lego_ev3/" class="md-nav__link">
+      <a href="../lego_ev3/lego_ev3/" class="md-nav__link">
         
   
   
@@ -1516,7 +1694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev3dev/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev/" class="md-nav__link">
         
   
   
@@ -1539,7 +1717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev3dev_installation/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_installation/" class="md-nav__link">
         
   
   
@@ -1562,7 +1740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev3dev_python/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_python/" class="md-nav__link">
         
   
   
@@ -1585,7 +1763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev3dev_wifi/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_wifi/" class="md-nav__link">
         
   
   
@@ -1605,32 +1783,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Remote execution
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../lego_ev3/ev3dev_RPyC/" class="md-nav__link">
         
   
   
@@ -1641,35 +1797,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#module-rpyc-remote-python-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Module RPyC (Remote Python Control)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1709,62 +1836,169 @@
   
 
 
-<h1 id="controle-a-distance-a-laide-du-module-python-rpyc-remote-python-control">Contrôle à distance à l'aide du module python RPyC (Remote Python Control)</h1>
-<p>Commande d'un autre Ev3 ou d'un téléphone</p>
-<p>-- Télécommande</p>
-<p>Commande à partir d'un PC</p>
-<p>-- Besoin de capacités de calcul supplémentaire, ex résolution de cube Rubic</p>
-<h2 id="module-rpyc-remote-python-control">Module RPyC (Remote Python Control)</h2>
-<p>Version 3.3.0 de RPyC déjà installée avec ev3dev</p>
-<p>Une version similaire doit être utilisée sur le client.  ATTENTION 3.3.0 ne supporte pas Python 3.7 et plus - une modification doit être apportée pour être compatible avec les Python récents (<em>async</em> est maintenant un mot clé réservé)</p>
-<h1 id="documentation-rpyc">Documentation RPyC</h1>
-<p>RPyC avec ev3dev: <a href="https://github.com/ev3dev/ev3dev-lang-python/blob/ev3dev-stretch/docs/rpyc.rst">https://github.com/ev3dev/ev3dev-lang-python/blob/ev3dev-stretch/docs/rpyc.rst</a></p>
-<p>Doc RPyC: <a href="https://rpyc.readthedocs.io/">https://rpyc.readthedocs.io/</a></p>
-<h1 id="installation-sur-ev3dev">Installation sur ev3dev</h1>
-<pre>
-
-echo "[Unit]
-Description=RPyC Classic Service
-After=multi-user.target
-
-[Service]
-Type=simple
-ExecStart=/usr/bin/rpyc_classic.py
-
-[Install]
-WantedBy=multi-user.target" > rpyc-classic.service
-
-
-sudo mv rpyc-classic.service /lib/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl enable rpyc-classic.service
-sudo systemctl start rpyc-classic.service
-
-</pre>
-
-<h1 id="installation-sur-pc">Installation sur PC</h1>
-<p>Créez un nouvel venv avec votre Python</p>
-<pre>
-python3 -m venv ev3dev
-./ev3dev/bin/activate
-</pre>
-
-<p>(ev3dev/Scripts/activate dans PowerShell)</p>
-<p>Installez la version 3.3.0 de rpyc</p>
-<blockquote>
-<p>pip install rpyc==3.3.0</p>
-</blockquote>
-<p>Écraser le contenu du package rpyc dans lib/site-packages avec le code modifié pour Python 3.7 et plus</p>
-<p><a href="https://cegepvicto.sharepoint.com/:u:/s/Section_31416/EaSgb2WDuqNBp8A7tOWczpABCe3ZcWbZ-h8Uz_seT3MMog?e=mVVPhZ">rpyc-3.3.0-mod</a></p>
-<h1 id="exemple-de-code-pour-allumer-les-leds-a-distance">Exemple de code pour allumer les leds à distance</h1>
-<pre>
-import rpyc
-conn = rpyc.classic.connect('X.X.X.X')
-ev3dev2_led = conn.modules['ev3dev2.led']
-leds = ev3dev2_led.Leds()
-leds.set_color("LEFT", "RED")
-leds.set_color("RIGHT", "RED")
-</pre>
+<h1 id="gestion-reseau-sur-raspberry-pi-os-bookworm-debian-12-version-detaillee-avec-fichiers">Gestion réseau sur Raspberry Pi OS Bookworm (Debian 12) – Version détaillée avec fichiers</h1>
+<hr />
+<h2 id="1-generalites">1. Généralités</h2>
+<ul>
+<li>Gestionnaire réseau : <strong>NetworkManager</strong></li>
+<li>CLI : <code>nmcli</code></li>
+<li>Interface console semi-graphique : <code>nmtui</code></li>
+<li>Fichiers de configuration importants :</li>
+<li>Connexions : <code>/etc/NetworkManager/system-connections/</code> (fichiers <code>.nmconnection</code>)</li>
+<li>Paramètres globaux : <code>/etc/NetworkManager/NetworkManager.conf</code></li>
+</ul>
+<hr />
+<h2 id="2-fichiers-de-configuration-exemples">2. Fichiers de configuration – exemples</h2>
+<h3 id="a-ethernet-en-dhcp">a) Ethernet en DHCP</h3>
+<p>Fichier : <code>/etc/NetworkManager/system-connections/Bureau.nmconnection</code>
+<div class="language-ini highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">[connection]</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="na">id</span><span class="o">=</span><span class="s">Bureau</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="na">type</span><span class="o">=</span><span class="s">ethernet</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="na">interface-name</span><span class="o">=</span><span class="s">eth0</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="na">permissions</span><span class="o">=</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">[ethernet]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="na">mac-address-blacklist</span><span class="o">=</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="k">[ipv4]</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="na">method</span><span class="o">=</span><span class="s">auto</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="k">[ipv6]</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="na">method</span><span class="o">=</span><span class="s">ignore</span>
+</span></code></pre></div></p>
+<h3 id="b-ethernet-en-ip-statique">b) Ethernet en IP statique</h3>
+<p>Fichier : <code>/etc/NetworkManager/system-connections/BureauStatique.nmconnection</code>
+<div class="language-ini highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">[connection]</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="na">id</span><span class="o">=</span><span class="s">BureauStatique</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="na">type</span><span class="o">=</span><span class="s">ethernet</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="na">interface-name</span><span class="o">=</span><span class="s">eth0</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="na">permissions</span><span class="o">=</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="k">[ethernet]</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="na">mac-address-blacklist</span><span class="o">=</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="k">[ipv4]</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="na">method</span><span class="o">=</span><span class="s">manual</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="na">addresses1</span><span class="o">=</span><span class="s">192.168.1.100/24,192.168.1.1</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="na">dns</span><span class="o">=</span><span class="s">8.8.8.8</span><span class="c1">;8.8.4.4;</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="k">[ipv6]</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="na">method</span><span class="o">=</span><span class="s">ignore</span>
+</span></code></pre></div></p>
+<h3 id="c-wi-fi-en-dhcp">c) Wi-Fi en DHCP</h3>
+<p>Fichier : <code>/etc/NetworkManager/system-connections/Maison.nmconnection</code>
+<div class="language-ini highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">[connection]</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="na">id</span><span class="o">=</span><span class="s">Maison</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="na">type</span><span class="o">=</span><span class="s">wifi</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="na">interface-name</span><span class="o">=</span><span class="s">wlan0</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="na">permissions</span><span class="o">=</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">[wifi]</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="na">ssid</span><span class="o">=</span><span class="s">Maison</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="na">mode</span><span class="o">=</span><span class="s">infrastructure</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="k">[wifi-security]</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="na">key-mgmt</span><span class="o">=</span><span class="s">wpa-psk</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="na">psk</span><span class="o">=</span><span class="s">12345678</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="k">[ipv4]</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="na">method</span><span class="o">=</span><span class="s">auto</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="k">[ipv6]</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="na">method</span><span class="o">=</span><span class="s">ignore</span>
+</span></code></pre></div></p>
+<h3 id="d-wi-fi-en-ip-statique">d) Wi-Fi en IP statique</h3>
+<p>Fichier : <code>/etc/NetworkManager/system-connections/MaisonStatique.nmconnection</code>
+<div class="language-ini highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">[connection]</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="na">id</span><span class="o">=</span><span class="s">MaisonStatique</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="na">type</span><span class="o">=</span><span class="s">wifi</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="na">interface-name</span><span class="o">=</span><span class="s">wlan0</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="na">permissions</span><span class="o">=</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="k">[wifi]</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="na">ssid</span><span class="o">=</span><span class="s">Maison</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="na">mode</span><span class="o">=</span><span class="s">infrastructure</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="k">[wifi-security]</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="na">key-mgmt</span><span class="o">=</span><span class="s">wpa-psk</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="na">psk</span><span class="o">=</span><span class="s">12345678</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="k">[ipv4]</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="na">method</span><span class="o">=</span><span class="s">manual</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="na">addresses1</span><span class="o">=</span><span class="s">192.168.1.50/24,192.168.1.1</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="na">dns</span><span class="o">=</span><span class="s">8.8.8.8</span><span class="c1">;</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="k">[ipv6]</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="na">method</span><span class="o">=</span><span class="s">ignore</span>
+</span></code></pre></div></p>
+<hr />
+<h2 id="3-commandes-de-gestion-reseau">3. Commandes de gestion réseau</h2>
+<h3 id="a-verifier-letat-des-interfaces">a) Vérifier l’état des interfaces</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>nmcli<span class="w"> </span>device<span class="w"> </span>status
+</span></code></pre></div>
+<h3 id="b-liste-des-connexions-connues">b) Liste des connexions connues</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>nmcli<span class="w"> </span>connection<span class="w"> </span>show
+</span></code></pre></div>
+<h3 id="c-connexion-wi-fi-rapide-dhcp">c) Connexion Wi-Fi rapide (DHCP)</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>nmcli<span class="w"> </span>device<span class="w"> </span>wifi<span class="w"> </span>connect<span class="w"> </span><span class="s2">&quot;NomDuSSID&quot;</span><span class="w"> </span>password<span class="w"> </span><span class="s2">&quot;motdepasse&quot;</span>
+</span></code></pre></div>
+<h3 id="d-connexion-ethernet-ip-statique">d) Connexion Ethernet (IP statique)</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>nmcli<span class="w"> </span>connection<span class="w"> </span>add<span class="w"> </span><span class="nb">type</span><span class="w"> </span>ethernet<span class="w"> </span>con-name<span class="w"> </span><span class="s2">&quot;BureauStatique&quot;</span><span class="w"> </span>ifname<span class="w"> </span>eth0<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>ipv4.method<span class="w"> </span>manual<span class="w"> </span>ipv4.addresses<span class="w"> </span><span class="m">192</span>.168.1.100/24<span class="w"> </span>ipv4.gateway<span class="w"> </span><span class="m">192</span>.168.1.1<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>ipv4.dns<span class="w"> </span><span class="m">8</span>.8.8.8
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>nmcli<span class="w"> </span>connection<span class="w"> </span>up<span class="w"> </span><span class="s2">&quot;BureauStatique&quot;</span>
+</span></code></pre></div>
+<h3 id="e-interface-semi-graphique">e) Interface semi-graphique</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>nmtui
+</span></code></pre></div>
+- Créer / modifier / activer des connexions Wi-Fi et Ethernet  </p>
+<hr />
+<h2 id="4-notes-pratiques-pour-les-etudiants">4. Notes pratiques pour les étudiants</h2>
+<ol>
+<li>Les fichiers <code>.nmconnection</code> <strong>sont propriétaires root</strong>, modification avec <code>sudo nano</code> si nécessaire.  </li>
+<li>Après modification d’un fichier, toujours <strong>recharger la connexion</strong> :
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>nmcli<span class="w"> </span>connection<span class="w"> </span>reload
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>nmcli<span class="w"> </span>connection<span class="w"> </span>up<span class="w"> </span><span class="s2">&quot;NomDeLaConnexion&quot;</span>
+</span></code></pre></div></li>
+<li><code>nmtui</code> simplifie la création de connexion sans éditer les fichiers.  </li>
+<li>Toujours vérifier la connectivité avec :
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>ping<span class="w"> </span><span class="m">8</span>.8.8.8
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>ping<span class="w"> </span>google.com
+</span></code></pre></div></li>
+</ol>
+<hr />
+<h2 id="5-comparatif-dhcp-vs-ip-statique">5. Comparatif DHCP vs IP statique</h2>
+<table>
+<thead>
+<tr>
+<th>Critère</th>
+<th>DHCP</th>
+<th>IP statique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Attribution IP</td>
+<td>Automatique par routeur</td>
+<td>Fixe, définie manuellement</td>
+</tr>
+<tr>
+<td>Facilité</td>
+<td>Très simple</td>
+<td>Plus complexe</td>
+</tr>
+<tr>
+<td>Utilité</td>
+<td>Postes clients</td>
+<td>Serveurs, IoT, Raspberry Pi fixes</td>
+</tr>
+<tr>
+<td>Modification réseau</td>
+<td>Transparente</td>
+<td>Nécessite mise à jour manuelle</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -1813,10 +2047,10 @@ leds.set_color("RIGHT", "RED")
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "content.code.copy", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>

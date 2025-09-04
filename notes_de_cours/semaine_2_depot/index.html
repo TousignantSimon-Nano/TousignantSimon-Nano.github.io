@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://tousignantsimon-nano.github.io/notes_de_cours/lego_ev3/ev3dev_RPyC/">
+        <link rel="canonical" href="https://tousignantsimon-nano.github.io/notes_de_cours/semaine_2_depot/">
       
       
-        <link rel="prev" href="../ev3dev_wifi/">
+        <link rel="prev" href="../semaine_1/">
       
       
+        <link rel="next" href="../semaine_2_mount_umount/">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Remote execution - Nano-ordinateurs 420-3A3-VI</title>
+        <title>Les dépots - Nano-ordinateurs 420-3A3-VI</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -111,15 +113,15 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-      <link rel="stylesheet" href="../../../css/all.css">
+      <link rel="stylesheet" href="../../css/all.css">
     
-      <link rel="stylesheet" href="../../../css/colors.css">
+      <link rel="stylesheet" href="../../css/colors.css">
     
-      <link rel="stylesheet" href="../../../css/cards.css">
+      <link rel="stylesheet" href="../../css/cards.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -145,7 +147,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#controle-a-distance-a-laide-du-module-python-rpyc-remote-python-control" class="md-skip">
+        <a href="#gestion-des-paquets-avec-apt" class="md-skip">
           Aller au contenu
         </a>
       
@@ -161,7 +163,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../../.." title="Nano-ordinateurs 420-3A3-VI" class="md-header__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
+    <a href="../.." title="Nano-ordinateurs 420-3A3-VI" class="md-header__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M448 205.8c-14.8 9.8-31.8 17.7-49.5 24-47 16.8-108.7 26.2-174.5 26.2s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V288c0 44.2 100.3 80 224 80s224-35.8 224-80zm0-77.8V80c0-44.2-100.3-80-224-80S0 35.8 0 80v48c0 44.2 100.3 80 224 80s224-35.8 224-80m-49.5 261.8C351.6 406.5 289.9 416 224 416s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V432c0 44.2 100.3 80 224 80s224-35.8 224-80v-66.2c-14.8 9.8-31.8 17.7-49.5 24"/></svg>
@@ -181,7 +183,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Remote execution
+              Les dépots
             
           </span>
         </div>
@@ -286,7 +288,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -305,7 +307,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../semaine_1/" class="md-tabs__link">
+      <a href="../semaine_1/" class="md-tabs__link">
         
   
   
@@ -322,11 +324,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../semaine_2_depot/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -344,7 +348,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../raspberry_pi/" class="md-tabs__link">
+      <a href="../../raspberry_pi/" class="md-tabs__link">
         
   
   
@@ -365,7 +369,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../feuille-triche-bash/" class="md-tabs__link">
+        <a href="../../feuille-triche-bash/" class="md-tabs__link">
           
   
   
@@ -381,8 +385,6 @@
   
   
   
-    
-  
   
     
     
@@ -390,13 +392,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../sense_hat/sense_hat/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../sense_hat/sense_hat/" class="md-tabs__link">
           
   
   
@@ -441,7 +441,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Nano-ordinateurs 420-3A3-VI" class="md-nav__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
+    <a href="../.." title="Nano-ordinateurs 420-3A3-VI" class="md-nav__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M448 205.8c-14.8 9.8-31.8 17.7-49.5 24-47 16.8-108.7 26.2-174.5 26.2s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V288c0 44.2 100.3 80 224 80s224-35.8 224-80zm0-77.8V80c0-44.2-100.3-80-224-80S0 35.8 0 80v48c0 44.2 100.3 80 224 80s224-35.8 224-80m-49.5 261.8C351.6 406.5 289.9 416 224 416s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V432c0 44.2 100.3 80 224 80s224-35.8 224-80v-66.2c-14.8 9.8-31.8 17.7-49.5 24"/></svg>
@@ -471,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -493,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_1/" class="md-nav__link">
+      <a href="../semaine_1/" class="md-nav__link">
         
   
   
@@ -512,24 +512,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -542,7 +547,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Semaine 2
@@ -553,10 +558,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../semaine_2_depot/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Les dépots
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -567,6 +594,152 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-commandes-de-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Commandes de base
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Commandes de base">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mettre-a-jour-la-liste-des-paquets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mettre à jour la liste des paquets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mettre-a-jour-les-logiciels-installes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mettre à jour les logiciels installés
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installer-un-paquet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installer un paquet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-fichiers-et-dossiers-importants" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Fichiers et dossiers importants
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ajouter-un-depot" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Ajouter un dépôt
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Ajouter un dépôt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-ajouter-le-depot-officiel-de-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple : ajouter le dépôt officiel de Docker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-les-cles-gpg-et-la-validation-des-depots" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Les clés GPG et la validation des dépôts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Les clés GPG et la validation des dépôts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ajouter-une-cle-manuellement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajouter une clé manuellement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifier-les-cles-connues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vérifier les clés connues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-exemple-pratique" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Exemple pratique
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-resume-visuel" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Résumé visuel
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -579,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_2_mount_umount/" class="md-nav__link">
+      <a href="../semaine_2_mount_umount/" class="md-nav__link">
         
   
   
@@ -602,7 +775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_2_reseau_raspberryos/" class="md-nav__link">
+      <a href="../semaine_2_reseau_raspberryos/" class="md-nav__link">
         
   
   
@@ -632,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../raspberry_pi/" class="md-nav__link">
+      <a href="../../raspberry_pi/" class="md-nav__link">
         
   
   
@@ -695,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../feuille-triche-bash/" class="md-nav__link">
+      <a href="../../feuille-triche-bash/" class="md-nav__link">
         
   
   
@@ -718,7 +891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../logiciels-necessaires/" class="md-nav__link">
+      <a href="../../logiciels-necessaires/" class="md-nav__link">
         
   
   
@@ -745,29 +918,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -780,7 +948,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Archives 2024
@@ -835,7 +1003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/sense_hat/" class="md-nav__link">
+      <a href="../sense_hat/sense_hat/" class="md-nav__link">
         
   
   
@@ -858,7 +1026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/sense_emu/" class="md-nav__link">
+      <a href="../sense_hat/sense_emu/" class="md-nav__link">
         
   
   
@@ -881,7 +1049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/lancer_script/" class="md-nav__link">
+      <a href="../sense_hat/lancer_script/" class="md-nav__link">
         
   
   
@@ -904,7 +1072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/couleur/" class="md-nav__link">
+      <a href="../sense_hat/couleur/" class="md-nav__link">
         
   
   
@@ -927,7 +1095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/affichage_pixel/" class="md-nav__link">
+      <a href="../sense_hat/affichage_pixel/" class="md-nav__link">
         
   
   
@@ -950,7 +1118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/joystick/" class="md-nav__link">
+      <a href="../sense_hat/joystick/" class="md-nav__link">
         
   
   
@@ -973,7 +1141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/capteur/" class="md-nav__link">
+      <a href="../sense_hat/capteur/" class="md-nav__link">
         
   
   
@@ -1045,7 +1213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/esp32/" class="md-nav__link">
+      <a href="../esp32/esp32/" class="md-nav__link">
         
   
   
@@ -1068,7 +1236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/esp32_pin/" class="md-nav__link">
+      <a href="../esp32/esp32_pin/" class="md-nav__link">
         
   
   
@@ -1091,7 +1259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/setup/" class="md-nav__link">
+      <a href="../esp32/setup/" class="md-nav__link">
         
   
   
@@ -1114,7 +1282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/premier_sketch/" class="md-nav__link">
+      <a href="../esp32/premier_sketch/" class="md-nav__link">
         
   
   
@@ -1137,7 +1305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/serial_monitor/" class="md-nav__link">
+      <a href="../esp32/serial_monitor/" class="md-nav__link">
         
   
   
@@ -1160,7 +1328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/millis/" class="md-nav__link">
+      <a href="../esp32/millis/" class="md-nav__link">
         
   
   
@@ -1183,7 +1351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/bluetooth/" class="md-nav__link">
+      <a href="../esp32/bluetooth/" class="md-nav__link">
         
   
   
@@ -1247,7 +1415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/del/" class="md-nav__link">
+      <a href="../esp32/del/" class="md-nav__link">
         
   
   
@@ -1270,7 +1438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/lcd/" class="md-nav__link">
+      <a href="../esp32/lcd/" class="md-nav__link">
         
   
   
@@ -1342,7 +1510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/bouton/" class="md-nav__link">
+      <a href="../esp32/bouton/" class="md-nav__link">
         
   
   
@@ -1365,7 +1533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/potentiometre/" class="md-nav__link">
+      <a href="../esp32/potentiometre/" class="md-nav__link">
         
   
   
@@ -1388,7 +1556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/servo/" class="md-nav__link">
+      <a href="../esp32/servo/" class="md-nav__link">
         
   
   
@@ -1419,7 +1587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/pwm_dac/" class="md-nav__link">
+      <a href="../esp32/pwm_dac/" class="md-nav__link">
         
   
   
@@ -1447,8 +1615,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1459,11 +1625,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
         
           
           <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
@@ -1479,7 +1645,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
             Lego Ev3
@@ -1493,7 +1659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lego_ev3/" class="md-nav__link">
+      <a href="../lego_ev3/lego_ev3/" class="md-nav__link">
         
   
   
@@ -1516,7 +1682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev3dev/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev/" class="md-nav__link">
         
   
   
@@ -1539,7 +1705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev3dev_installation/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_installation/" class="md-nav__link">
         
   
   
@@ -1562,7 +1728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev3dev_python/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_python/" class="md-nav__link">
         
   
   
@@ -1585,7 +1751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev3dev_wifi/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_wifi/" class="md-nav__link">
         
   
   
@@ -1605,32 +1771,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Remote execution
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../lego_ev3/ev3dev_RPyC/" class="md-nav__link">
         
   
   
@@ -1641,35 +1785,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#module-rpyc-remote-python-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Module RPyC (Remote Python Control)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1709,62 +1824,238 @@
   
 
 
-<h1 id="controle-a-distance-a-laide-du-module-python-rpyc-remote-python-control">Contrôle à distance à l'aide du module python RPyC (Remote Python Control)</h1>
-<p>Commande d'un autre Ev3 ou d'un téléphone</p>
-<p>-- Télécommande</p>
-<p>Commande à partir d'un PC</p>
-<p>-- Besoin de capacités de calcul supplémentaire, ex résolution de cube Rubic</p>
-<h2 id="module-rpyc-remote-python-control">Module RPyC (Remote Python Control)</h2>
-<p>Version 3.3.0 de RPyC déjà installée avec ev3dev</p>
-<p>Une version similaire doit être utilisée sur le client.  ATTENTION 3.3.0 ne supporte pas Python 3.7 et plus - une modification doit être apportée pour être compatible avec les Python récents (<em>async</em> est maintenant un mot clé réservé)</p>
-<h1 id="documentation-rpyc">Documentation RPyC</h1>
-<p>RPyC avec ev3dev: <a href="https://github.com/ev3dev/ev3dev-lang-python/blob/ev3dev-stretch/docs/rpyc.rst">https://github.com/ev3dev/ev3dev-lang-python/blob/ev3dev-stretch/docs/rpyc.rst</a></p>
-<p>Doc RPyC: <a href="https://rpyc.readthedocs.io/">https://rpyc.readthedocs.io/</a></p>
-<h1 id="installation-sur-ev3dev">Installation sur ev3dev</h1>
-<pre>
-
-echo "[Unit]
-Description=RPyC Classic Service
-After=multi-user.target
-
-[Service]
-Type=simple
-ExecStart=/usr/bin/rpyc_classic.py
-
-[Install]
-WantedBy=multi-user.target" > rpyc-classic.service
-
-
-sudo mv rpyc-classic.service /lib/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl enable rpyc-classic.service
-sudo systemctl start rpyc-classic.service
-
-</pre>
-
-<h1 id="installation-sur-pc">Installation sur PC</h1>
-<p>Créez un nouvel venv avec votre Python</p>
-<pre>
-python3 -m venv ev3dev
-./ev3dev/bin/activate
-</pre>
-
-<p>(ev3dev/Scripts/activate dans PowerShell)</p>
-<p>Installez la version 3.3.0 de rpyc</p>
-<blockquote>
-<p>pip install rpyc==3.3.0</p>
-</blockquote>
-<p>Écraser le contenu du package rpyc dans lib/site-packages avec le code modifié pour Python 3.7 et plus</p>
-<p><a href="https://cegepvicto.sharepoint.com/:u:/s/Section_31416/EaSgb2WDuqNBp8A7tOWczpABCe3ZcWbZ-h8Uz_seT3MMog?e=mVVPhZ">rpyc-3.3.0-mod</a></p>
-<h1 id="exemple-de-code-pour-allumer-les-leds-a-distance">Exemple de code pour allumer les leds à distance</h1>
-<pre>
-import rpyc
-conn = rpyc.classic.connect('X.X.X.X')
-ev3dev2_led = conn.modules['ev3dev2.led']
-leds = ev3dev2_led.Leds()
-leds.set_color("LEFT", "RED")
-leds.set_color("RIGHT", "RED")
-</pre>
+<h1 id="gestion-des-paquets-avec-apt">Gestion des paquets avec APT</h1>
+<p>APT (<strong>Advanced Package Tool</strong>) est le gestionnaire de paquets utilisé
+par les distributions basées sur <strong>Debian</strong> (Ubuntu, Linux Mint, etc.).\
+Il permet de rechercher, installer, mettre à jour et supprimer des
+logiciels.</p>
+<hr />
+<h2 id="1-commandes-de-base">1. Commandes de base</h2>
+<h3 id="mettre-a-jour-la-liste-des-paquets">Mettre à jour la liste des paquets</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span></code></pre></div>
+<ul>
+<li>Cette commande <strong>ne met pas à jour les logiciels</strong>.\</li>
+<li>Elle télécharge la liste des paquets disponibles à partir des dépôts
+    configurés dans <code>/etc/apt/sources.list</code> et
+    <code>/etc/apt/sources.list.d/</code>.\</li>
+<li>Résultat : le système sait quelles nouvelles versions sont
+    disponibles.</li>
+</ul>
+<h3 id="mettre-a-jour-les-logiciels-installes">Mettre à jour les logiciels installés</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
+</span></code></pre></div>
+<ul>
+<li>Installe les <strong>nouvelles versions</strong> des paquets déjà installés (sans
+    supprimer ni installer de nouveaux paquets).</li>
+</ul>
+<p>Pour des mises à jour plus profondes (qui peuvent installer/supprimer
+des dépendances) :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>full-upgrade
+</span></code></pre></div>
+<h3 id="installer-un-paquet">Installer un paquet</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>nom-du-paquet
+</span></code></pre></div>
+<p>Exemple :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>vim
+</span></code></pre></div>
+<hr />
+<h2 id="2-fichiers-et-dossiers-importants">2. Fichiers et dossiers importants</h2>
+<ul>
+<li>
+<p><code>/etc/apt/sources.list</code>\
+    → Contient la liste principale des dépôts de logiciels.</p>
+</li>
+<li>
+<p><code>/etc/apt/sources.list.d/</code>\
+    → Répertoire contenant des fichiers <code>.list</code> pour des dépôts
+    additionnels (souvent ajoutés manuellement ou par un logiciel
+    tiers).</p>
+</li>
+<li>
+<p><code>/var/lib/apt/lists/</code>\
+    → Contient les fichiers téléchargés par <code>apt update</code> (les index de
+    paquets).</p>
+</li>
+<li>
+<p><code>/etc/apt/trusted.gpg</code> et <code>/etc/apt/trusted.gpg.d/</code>\
+    → Contiennent les <strong>clés GPG</strong> permettant de vérifier l'authenticité
+    des paquets téléchargés.</p>
+</li>
+</ul>
+<hr />
+<h2 id="3-ajouter-un-depot">3. Ajouter un dépôt</h2>
+<h3 id="exemple-ajouter-le-depot-officiel-de-docker">Exemple : ajouter le dépôt officiel de Docker</h3>
+<ol>
+<li>Ajouter la clé GPG du dépôt :</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://download.docker.com/linux/ubuntu/gpg<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>gpg<span class="w"> </span>--dearmor<span class="w"> </span>-o<span class="w"> </span>/etc/apt/trusted.gpg.d/docker.gpg
+</span></code></pre></div>
+<ol>
+<li>Ajouter le dépôt dans <code>/etc/apt/sources.list.d/</code> :</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/sources.list.d/docker.list
+</span></code></pre></div>
+<ol>
+<li>Mettre à jour la liste des paquets :</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span></code></pre></div>
+<ol>
+<li>Installer le paquet :</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>docker-ce
+</span></code></pre></div>
+<hr />
+<h2 id="4-les-cles-gpg-et-la-validation-des-depots">4. Les clés GPG et la validation des dépôts</h2>
+<ul>
+<li>Chaque dépôt signe ses paquets avec une <strong>clé privée</strong>.\</li>
+<li>Ton système stocke la <strong>clé publique</strong> correspondante dans
+    <code>/etc/apt/trusted.gpg.d/</code>.\</li>
+<li>Quand tu télécharges un paquet, <code>apt</code> vérifie la signature → si elle
+    ne correspond pas, le paquet est rejeté (erreur <em>NO_PUBKEY</em>).</li>
+</ul>
+<h3 id="ajouter-une-cle-manuellement">Ajouter une clé manuellement</h3>
+<p>Si un dépôt te demande d'ajouter une clé :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>wget<span class="w"> </span>-qO<span class="w"> </span>-<span class="w"> </span>https://example.com/repo.gpg<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>gpg<span class="w"> </span>--dearmor<span class="w"> </span>-o<span class="w"> </span>/etc/apt/trusted.gpg.d/example.gpg
+</span></code></pre></div>
+<h3 id="verifier-les-cles-connues">Vérifier les clés connues</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>apt-key<span class="w"> </span>list
+</span></code></pre></div>
+<p><em>(À noter : <code>apt-key</code> est en voie d'abandon, la méthode recommandée est
+l'usage de fichiers <code>.gpg</code> dans <code>/etc/apt/trusted.gpg.d/</code>.)</em></p>
+<hr />
+<h2 id="5-exemple-pratique">5. Exemple pratique</h2>
+<p>Ajout du dépôt <strong>Google Chrome</strong> :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>wget<span class="w"> </span>-q<span class="w"> </span>-O<span class="w"> </span>-<span class="w"> </span>https://dl.google.com/linux/linux_signing_key.pub<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>gpg<span class="w"> </span>--dearmor<span class="w"> </span>-o<span class="w"> </span>/etc/apt/trusted.gpg.d/google.gpg
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/sources.list.d/google-chrome.list
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>google-chrome-stable
+</span></code></pre></div>
+<hr />
+<h2 id="6-resume-visuel">6. Résumé visuel</h2>
+<ul>
+<li><code>apt update</code> → met à jour la liste des paquets depuis les dépôts.\</li>
+<li><code>apt upgrade</code> → met à jour les paquets installés.\</li>
+<li><code>apt install</code> → installe un paquet.\</li>
+<li>Dépôts listés dans : <code>/etc/apt/sources.list</code> et
+    <code>/etc/apt/sources.list.d/</code>.\</li>
+<li>Clés de vérification : <code>/etc/apt/trusted.gpg.d/</code>.</li>
+</ul>
+<hr />
+<h1 id="gestion-des-paquets-avec-apt-commandes-complementaires">Gestion des paquets avec APT -- Commandes complémentaires</h1>
+<p>En plus de <code>update</code>, <code>upgrade</code> et <code>install</code>, APT propose d'autres
+commandes très utiles pour gérer les logiciels installés ou disponibles
+sur le système.</p>
+<hr />
+<h2 id="1-lister-les-paquets">1. Lister les paquets</h2>
+<h3 id="lister-tous-les-paquets-disponibles">Lister tous les paquets disponibles</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>apt<span class="w"> </span>list
+</span></code></pre></div>
+<ul>
+<li>Affiche tous les paquets connus du système (installés ou non).</li>
+<li>Liste très longue → généralement on combine avec <code>grep</code>.</li>
+</ul>
+<p>Exemple :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>apt<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>python3
+</span></code></pre></div>
+<h3 id="lister-uniquement-les-paquets-installes">Lister uniquement les paquets installés</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>apt<span class="w"> </span>list<span class="w"> </span>--installed
+</span></code></pre></div>
+<h3 id="lister-les-paquets-pouvant-etre-mis-a-jour">Lister les paquets pouvant être mis à jour</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>apt<span class="w"> </span>list<span class="w"> </span>--upgradable
+</span></code></pre></div>
+<hr />
+<h2 id="2-rechercher-des-paquets">2. Rechercher des paquets</h2>
+<h3 id="rechercher-par-nom-ou-description">Rechercher par nom ou description</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>apt<span class="w"> </span>search<span class="w"> </span>mot-clef
+</span></code></pre></div>
+<p>Exemple :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>apt<span class="w"> </span>search<span class="w"> </span>editor
+</span></code></pre></div>
+<p>→ Affiche tous les paquets dont le nom ou la description contient
+<em>editor</em>.</p>
+<hr />
+<h2 id="3-supprimer-des-paquets">3. Supprimer des paquets</h2>
+<h3 id="supprimer-un-paquet-sans-toucher-a-ses-fichiers-de-configuration">Supprimer un paquet sans toucher à ses fichiers de configuration</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>remove<span class="w"> </span>nom-du-paquet
+</span></code></pre></div>
+<p>Exemple :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>remove<span class="w"> </span>vim
+</span></code></pre></div>
+<h3 id="supprimer-un-paquet-et-ses-fichiers-de-configuration">Supprimer un paquet <strong>et ses fichiers de configuration</strong></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>purge<span class="w"> </span>nom-du-paquet
+</span></code></pre></div>
+<p>Exemple :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>purge<span class="w"> </span>vim
+</span></code></pre></div>
+<hr />
+<h2 id="4-gestion-automatique-des-dependances">4. Gestion automatique des dépendances</h2>
+<p>Quand on installe un logiciel, APT installe souvent d'autres paquets
+nécessaires (<strong>dépendances</strong>).\
+Si ces dépendances ne sont plus utilisées, on peut les supprimer
+automatiquement.</p>
+<h3 id="supprimer-les-paquets-installes-automatiquement-et-devenus-inutiles">Supprimer les paquets installés automatiquement et devenus inutiles</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>autoremove
+</span></code></pre></div>
+<ul>
+<li>Nettoie le système.\</li>
+<li>Exemple : si on désinstalle <code>libreoffice</code>, certains paquets
+    dépendants peuvent rester → <code>autoremove</code> les supprime.</li>
+</ul>
+<h3 id="exemple-pratique">Exemple pratique</h3>
+<ol>
+<li>
+<p>Installez <code>geany</code> :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>geany
+</span></code></pre></div>
+<p>→ plusieurs bibliothèques sont installées en plus.</p>
+</li>
+<li>
+<p>Supprimez <code>geany</code> :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>remove<span class="w"> </span>geany
+</span></code></pre></div>
+<p>→ certaines dépendances restent installées.</p>
+</li>
+<li>
+<p>Vérifiez les paquets devenus inutiles :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>autoremove
+</span></code></pre></div>
+</li>
+</ol>
+<hr />
+<h2 id="5-exemples-pratiques">5. Exemples pratiques</h2>
+<ul>
+<li>
+<p>Lister les paquets liés à Python :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>apt<span class="w"> </span>list<span class="w"> </span>--installed<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>python3
+</span></code></pre></div>
+</li>
+<li>
+<p>Rechercher un navigateur dans les dépôts :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>apt<span class="w"> </span>search<span class="w"> </span>browser
+</span></code></pre></div>
+</li>
+<li>
+<p>Supprimer Firefox et nettoyer les dépendances :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>remove<span class="w"> </span>firefox
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>autoremove
+</span></code></pre></div>
+</li>
+</ul>
+<hr />
+<h2 id="6-resume-visuel_1">6. Résumé visuel</h2>
+<ul>
+<li><code>apt list</code> → liste les paquets (installés, disponibles, à mettre à
+    jour).\</li>
+<li><code>apt search</code> → recherche un paquet.\</li>
+<li><code>apt remove</code> → supprime un paquet (mais garde les fichiers de
+    config).\</li>
+<li><code>apt purge</code> → supprime un paquet + ses fichiers de config.\</li>
+<li><code>apt autoremove</code> → supprime les dépendances inutiles.</li>
+</ul>
 
 
 
@@ -1813,10 +2104,10 @@ leds.set_color("RIGHT", "RED")
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "content.code.copy", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>

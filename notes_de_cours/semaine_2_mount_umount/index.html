@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://tousignantsimon-nano.github.io/notes_de_cours/lego_ev3/ev3dev_RPyC/">
+        <link rel="canonical" href="https://tousignantsimon-nano.github.io/notes_de_cours/semaine_2_mount_umount/">
       
       
-        <link rel="prev" href="../ev3dev_wifi/">
+        <link rel="prev" href="../semaine_2_depot/">
       
       
+        <link rel="next" href="../semaine_2_reseau_raspberryos/">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Remote execution - Nano-ordinateurs 420-3A3-VI</title>
+        <title>Monter et démonter un disque - Nano-ordinateurs 420-3A3-VI</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -111,15 +113,15 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-      <link rel="stylesheet" href="../../../css/all.css">
+      <link rel="stylesheet" href="../../css/all.css">
     
-      <link rel="stylesheet" href="../../../css/colors.css">
+      <link rel="stylesheet" href="../../css/colors.css">
     
-      <link rel="stylesheet" href="../../../css/cards.css">
+      <link rel="stylesheet" href="../../css/cards.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -145,7 +147,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#controle-a-distance-a-laide-du-module-python-rpyc-remote-python-control" class="md-skip">
+        <a href="#gestion-des-montages-sur-raspberry-pi-os-bookworm-debian-12" class="md-skip">
           Aller au contenu
         </a>
       
@@ -161,7 +163,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../../.." title="Nano-ordinateurs 420-3A3-VI" class="md-header__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
+    <a href="../.." title="Nano-ordinateurs 420-3A3-VI" class="md-header__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M448 205.8c-14.8 9.8-31.8 17.7-49.5 24-47 16.8-108.7 26.2-174.5 26.2s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V288c0 44.2 100.3 80 224 80s224-35.8 224-80zm0-77.8V80c0-44.2-100.3-80-224-80S0 35.8 0 80v48c0 44.2 100.3 80 224 80s224-35.8 224-80m-49.5 261.8C351.6 406.5 289.9 416 224 416s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V432c0 44.2 100.3 80 224 80s224-35.8 224-80v-66.2c-14.8 9.8-31.8 17.7-49.5 24"/></svg>
@@ -181,7 +183,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Remote execution
+              Monter et démonter un disque
             
           </span>
         </div>
@@ -286,7 +288,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -305,7 +307,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../semaine_1/" class="md-tabs__link">
+      <a href="../semaine_1/" class="md-tabs__link">
         
   
   
@@ -322,11 +324,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../semaine_2_depot/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../semaine_2_depot/" class="md-tabs__link">
           
   
   
@@ -344,7 +348,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../raspberry_pi/" class="md-tabs__link">
+      <a href="../../raspberry_pi/" class="md-tabs__link">
         
   
   
@@ -365,7 +369,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../feuille-triche-bash/" class="md-tabs__link">
+        <a href="../../feuille-triche-bash/" class="md-tabs__link">
           
   
   
@@ -381,8 +385,6 @@
   
   
   
-    
-  
   
     
     
@@ -390,13 +392,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../sense_hat/sense_hat/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../sense_hat/sense_hat/" class="md-tabs__link">
           
   
   
@@ -441,7 +441,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Nano-ordinateurs 420-3A3-VI" class="md-nav__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
+    <a href="../.." title="Nano-ordinateurs 420-3A3-VI" class="md-nav__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M448 205.8c-14.8 9.8-31.8 17.7-49.5 24-47 16.8-108.7 26.2-174.5 26.2s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V288c0 44.2 100.3 80 224 80s224-35.8 224-80zm0-77.8V80c0-44.2-100.3-80-224-80S0 35.8 0 80v48c0 44.2 100.3 80 224 80s224-35.8 224-80m-49.5 261.8C351.6 406.5 289.9 416 224 416s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V432c0 44.2 100.3 80 224 80s224-35.8 224-80v-66.2c-14.8 9.8-31.8 17.7-49.5 24"/></svg>
@@ -471,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -493,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_1/" class="md-nav__link">
+      <a href="../semaine_1/" class="md-nav__link">
         
   
   
@@ -512,24 +512,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -542,7 +547,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Semaine 2
@@ -556,7 +561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_2_depot/" class="md-nav__link">
+      <a href="../semaine_2_depot/" class="md-nav__link">
         
   
   
@@ -576,10 +581,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../semaine_2_mount_umount/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Monter et démonter un disque
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -590,6 +617,209 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-generalites" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Généralités
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-montage-manuel" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Montage manuel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Montage manuel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-monter-une-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Monter une partition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-monter-avec-uuid" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Monter avec UUID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-options-courantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      c) Options courantes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-demontage" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Démontage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Démontage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-demontage-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Démontage simple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-demontage-force-et-lazy" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Démontage forcé et lazy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fichier-etcfstab" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Fichier /etc/fstab
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Fichier /etc/fstab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-explication-des-colonnes" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Explication des colonnes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-exemple-complet" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Exemple complet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Exemple complet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-partition-racine-et-home" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Partition racine et /home
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-partition-swap-fichier-ou-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Partition swap (fichier ou partition)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="b) Partition swap (fichier ou partition)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#partition-swap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partition swap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fichier-swap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fichier swap
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Vérification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-notes-pratiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Notes pratiques
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -602,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_2_reseau_raspberryos/" class="md-nav__link">
+      <a href="../semaine_2_reseau_raspberryos/" class="md-nav__link">
         
   
   
@@ -632,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../raspberry_pi/" class="md-nav__link">
+      <a href="../../raspberry_pi/" class="md-nav__link">
         
   
   
@@ -695,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../feuille-triche-bash/" class="md-nav__link">
+      <a href="../../feuille-triche-bash/" class="md-nav__link">
         
   
   
@@ -718,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../logiciels-necessaires/" class="md-nav__link">
+      <a href="../../logiciels-necessaires/" class="md-nav__link">
         
   
   
@@ -745,29 +975,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -780,7 +1005,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Archives 2024
@@ -835,7 +1060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/sense_hat/" class="md-nav__link">
+      <a href="../sense_hat/sense_hat/" class="md-nav__link">
         
   
   
@@ -858,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/sense_emu/" class="md-nav__link">
+      <a href="../sense_hat/sense_emu/" class="md-nav__link">
         
   
   
@@ -881,7 +1106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/lancer_script/" class="md-nav__link">
+      <a href="../sense_hat/lancer_script/" class="md-nav__link">
         
   
   
@@ -904,7 +1129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/couleur/" class="md-nav__link">
+      <a href="../sense_hat/couleur/" class="md-nav__link">
         
   
   
@@ -927,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/affichage_pixel/" class="md-nav__link">
+      <a href="../sense_hat/affichage_pixel/" class="md-nav__link">
         
   
   
@@ -950,7 +1175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/joystick/" class="md-nav__link">
+      <a href="../sense_hat/joystick/" class="md-nav__link">
         
   
   
@@ -973,7 +1198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sense_hat/capteur/" class="md-nav__link">
+      <a href="../sense_hat/capteur/" class="md-nav__link">
         
   
   
@@ -1045,7 +1270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/esp32/" class="md-nav__link">
+      <a href="../esp32/esp32/" class="md-nav__link">
         
   
   
@@ -1068,7 +1293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/esp32_pin/" class="md-nav__link">
+      <a href="../esp32/esp32_pin/" class="md-nav__link">
         
   
   
@@ -1091,7 +1316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/setup/" class="md-nav__link">
+      <a href="../esp32/setup/" class="md-nav__link">
         
   
   
@@ -1114,7 +1339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/premier_sketch/" class="md-nav__link">
+      <a href="../esp32/premier_sketch/" class="md-nav__link">
         
   
   
@@ -1137,7 +1362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/serial_monitor/" class="md-nav__link">
+      <a href="../esp32/serial_monitor/" class="md-nav__link">
         
   
   
@@ -1160,7 +1385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/millis/" class="md-nav__link">
+      <a href="../esp32/millis/" class="md-nav__link">
         
   
   
@@ -1183,7 +1408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/bluetooth/" class="md-nav__link">
+      <a href="../esp32/bluetooth/" class="md-nav__link">
         
   
   
@@ -1247,7 +1472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/del/" class="md-nav__link">
+      <a href="../esp32/del/" class="md-nav__link">
         
   
   
@@ -1270,7 +1495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/lcd/" class="md-nav__link">
+      <a href="../esp32/lcd/" class="md-nav__link">
         
   
   
@@ -1342,7 +1567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/bouton/" class="md-nav__link">
+      <a href="../esp32/bouton/" class="md-nav__link">
         
   
   
@@ -1365,7 +1590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/potentiometre/" class="md-nav__link">
+      <a href="../esp32/potentiometre/" class="md-nav__link">
         
   
   
@@ -1388,7 +1613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/servo/" class="md-nav__link">
+      <a href="../esp32/servo/" class="md-nav__link">
         
   
   
@@ -1419,7 +1644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/pwm_dac/" class="md-nav__link">
+      <a href="../esp32/pwm_dac/" class="md-nav__link">
         
   
   
@@ -1447,8 +1672,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1459,11 +1682,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
         
           
           <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
@@ -1479,7 +1702,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
             Lego Ev3
@@ -1493,7 +1716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lego_ev3/" class="md-nav__link">
+      <a href="../lego_ev3/lego_ev3/" class="md-nav__link">
         
   
   
@@ -1516,7 +1739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev3dev/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev/" class="md-nav__link">
         
   
   
@@ -1539,7 +1762,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev3dev_installation/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_installation/" class="md-nav__link">
         
   
   
@@ -1562,7 +1785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev3dev_python/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_python/" class="md-nav__link">
         
   
   
@@ -1585,7 +1808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev3dev_wifi/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_wifi/" class="md-nav__link">
         
   
   
@@ -1605,32 +1828,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Remote execution
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../lego_ev3/ev3dev_RPyC/" class="md-nav__link">
         
   
   
@@ -1641,35 +1842,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#module-rpyc-remote-python-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Module RPyC (Remote Python Control)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1709,62 +1881,121 @@
   
 
 
-<h1 id="controle-a-distance-a-laide-du-module-python-rpyc-remote-python-control">Contrôle à distance à l'aide du module python RPyC (Remote Python Control)</h1>
-<p>Commande d'un autre Ev3 ou d'un téléphone</p>
-<p>-- Télécommande</p>
-<p>Commande à partir d'un PC</p>
-<p>-- Besoin de capacités de calcul supplémentaire, ex résolution de cube Rubic</p>
-<h2 id="module-rpyc-remote-python-control">Module RPyC (Remote Python Control)</h2>
-<p>Version 3.3.0 de RPyC déjà installée avec ev3dev</p>
-<p>Une version similaire doit être utilisée sur le client.  ATTENTION 3.3.0 ne supporte pas Python 3.7 et plus - une modification doit être apportée pour être compatible avec les Python récents (<em>async</em> est maintenant un mot clé réservé)</p>
-<h1 id="documentation-rpyc">Documentation RPyC</h1>
-<p>RPyC avec ev3dev: <a href="https://github.com/ev3dev/ev3dev-lang-python/blob/ev3dev-stretch/docs/rpyc.rst">https://github.com/ev3dev/ev3dev-lang-python/blob/ev3dev-stretch/docs/rpyc.rst</a></p>
-<p>Doc RPyC: <a href="https://rpyc.readthedocs.io/">https://rpyc.readthedocs.io/</a></p>
-<h1 id="installation-sur-ev3dev">Installation sur ev3dev</h1>
-<pre>
-
-echo "[Unit]
-Description=RPyC Classic Service
-After=multi-user.target
-
-[Service]
-Type=simple
-ExecStart=/usr/bin/rpyc_classic.py
-
-[Install]
-WantedBy=multi-user.target" > rpyc-classic.service
-
-
-sudo mv rpyc-classic.service /lib/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl enable rpyc-classic.service
-sudo systemctl start rpyc-classic.service
-
-</pre>
-
-<h1 id="installation-sur-pc">Installation sur PC</h1>
-<p>Créez un nouvel venv avec votre Python</p>
-<pre>
-python3 -m venv ev3dev
-./ev3dev/bin/activate
-</pre>
-
-<p>(ev3dev/Scripts/activate dans PowerShell)</p>
-<p>Installez la version 3.3.0 de rpyc</p>
+<h1 id="gestion-des-montages-sur-raspberry-pi-os-bookworm-debian-12">Gestion des montages sur Raspberry Pi OS Bookworm (Debian 12)</h1>
+<hr />
+<h2 id="1-generalites">1. Généralités</h2>
+<ul>
+<li>Commandes principales : <code>mount</code>, <code>umount</code></li>
+<li>Fichier de configuration automatique : <code>/etc/fstab</code></li>
+<li>Les partitions peuvent être identifiées par <strong>device</strong> (<code>/dev/sda1</code>) ou par <strong>UUID</strong> (recommandé pour éviter les changements de nom).</li>
+<li>Points de montage recommandés :</li>
+<li><strong>/mnt</strong> : pour les montages temporaires ou administratifs, partitions internes ou systèmes.</li>
+<li><strong>/media/user/</strong> : pour les périphériques amovibles, détectés par l’environnement graphique.</li>
+</ul>
+<hr />
+<h2 id="2-montage-manuel">2. Montage manuel</h2>
+<h3 id="a-monter-une-partition">a) Monter une partition</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>mount<span class="w"> </span>/dev/sda1<span class="w"> </span>/mnt/data
+</span></code></pre></div>
+- <code>/dev/sda1</code> : périphérique ou partition
+- <code>/mnt/data</code> : point de montage créé pour ce montage (préférable à <code>/media/user</code> pour les systèmes et partitions internes)</p>
+<h3 id="b-monter-avec-uuid">b) Monter avec UUID</h3>
+<ol>
+<li>Trouver l’UUID :
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>blkid
+</span></code></pre></div>
+Exemple :
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>/dev/sda1: UUID=&quot;123e4567-e89b-12d3-a456-426614174000&quot; TYPE=&quot;ext4&quot;
+</span></code></pre></div></li>
+<li>Monter via UUID :
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>mount<span class="w"> </span>-U<span class="w"> </span>123e4567-e89b-12d3-a456-426614174000<span class="w"> </span>/mnt/data
+</span></code></pre></div></li>
+</ol>
+<h3 id="c-options-courantes">c) Options courantes</h3>
+<ul>
+<li><code>ro</code> : lecture seule</li>
+<li><code>rw</code> : lecture/écriture</li>
+<li><code>noexec</code> : ne pas exécuter de fichiers binaires</li>
+<li><code>nosuid</code> : ignorer les SUID/SGID</li>
+<li><code>hard</code> : pour les montages NFS, bloque les opérations jusqu’à ce que le serveur réponde</li>
+<li><code>soft</code> : retourne une erreur en cas de timeout (NFS)</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>mount<span class="w"> </span>-o<span class="w"> </span>rw,noexec<span class="w"> </span>/dev/sda1<span class="w"> </span>/mnt/data
+</span></code></pre></div>
+<hr />
+<h2 id="3-demontage">3. Démontage</h2>
+<h3 id="a-demontage-simple">a) Démontage simple</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>umount<span class="w"> </span>/mnt/data
+</span></code></pre></div>
+<h3 id="b-demontage-force-et-lazy">b) Démontage forcé et lazy</h3>
+<ul>
+<li><strong>Lazy unmount (<code>-l</code>)</strong> : détache le système de fichiers immédiatement, mais attend que tous les fichiers ouverts soient fermés avant de libérer complètement le montage.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>umount<span class="w"> </span>-l<span class="w"> </span>/mnt/data
+</span></code></pre></div></li>
+<li><strong>Force unmount (<code>-f</code>)</strong> : force le démontage même si le système de fichiers est occupé (utile pour NFS ou partitions corrompues).
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>umount<span class="w"> </span>-f<span class="w"> </span>/mnt/data
+</span></code></pre></div></li>
+</ul>
 <blockquote>
-<p>pip install rpyc==3.3.0</p>
+<p>Note : <code>lazy</code> est plus sûr que <code>force</code> car il évite les risques de corruption.</p>
 </blockquote>
-<p>Écraser le contenu du package rpyc dans lib/site-packages avec le code modifié pour Python 3.7 et plus</p>
-<p><a href="https://cegepvicto.sharepoint.com/:u:/s/Section_31416/EaSgb2WDuqNBp8A7tOWczpABCe3ZcWbZ-h8Uz_seT3MMog?e=mVVPhZ">rpyc-3.3.0-mod</a></p>
-<h1 id="exemple-de-code-pour-allumer-les-leds-a-distance">Exemple de code pour allumer les leds à distance</h1>
-<pre>
-import rpyc
-conn = rpyc.classic.connect('X.X.X.X')
-ev3dev2_led = conn.modules['ev3dev2.led']
-leds = ev3dev2_led.Leds()
-leds.set_color("LEFT", "RED")
-leds.set_color("RIGHT", "RED")
-</pre>
+<hr />
+<h2 id="4-fichier-etcfstab">4. Fichier <code>/etc/fstab</code></h2>
+<p>Exemple avec UUID :
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a># &lt;file system&gt; &lt;mount point&gt; &lt;type&gt; &lt;options&gt; &lt;dump&gt; &lt;pass&gt;
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>UUID=123e4567-e89b-12d3-a456-426614174000 /mnt/data ext4 defaults 0 2
+</span></code></pre></div></p>
+<h3 id="a-explication-des-colonnes">a) Explication des colonnes</h3>
+<ol>
+<li><code>file system</code> : périphérique ou UUID</li>
+<li><code>mount point</code> : répertoire de montage</li>
+<li><code>type</code> : ext4, vfat, ntfs, swap, etc.</li>
+<li><code>options</code> : defaults, ro, rw, noexec...</li>
+<li><code>dump</code> : 0 ou 1 (utilisé par dump)</li>
+<li><code>pass</code> : 0,1,2 (ordre pour fsck au boot)</li>
+</ol>
+<hr />
+<h2 id="5-exemple-complet">5. Exemple complet</h2>
+<h3 id="a-partition-racine-et-home">a) Partition racine et /home</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>UUID=aaaa-bbbb / ext4 defaults 0 1
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>UUID=cccc-dddd /home ext4 defaults 0 2
+</span></code></pre></div>
+<h3 id="b-partition-swap-fichier-ou-partition">b) Partition swap (fichier ou partition)</h3>
+<h4 id="partition-swap">Partition swap</h4>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>UUID=eeee-ffff none swap sw 0 0
+</span></code></pre></div>
+<h4 id="fichier-swap">Fichier swap</h4>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>fallocate<span class="w"> </span>-l<span class="w"> </span>1G<span class="w"> </span>/swapfile
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>/swapfile
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>sudo<span class="w"> </span>mkswap<span class="w"> </span>/swapfile
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>sudo<span class="w"> </span>swapon<span class="w"> </span>/swapfile
+</span></code></pre></div>
+Ajouter dans <code>/etc/fstab</code> :
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>/swapfile none swap sw 0 0
+</span></code></pre></div></p>
+<hr />
+<h2 id="6-verification">6. Vérification</h2>
+<ul>
+<li>Lister les montages actifs :
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>mount<span class="w"> </span><span class="p">|</span><span class="w"> </span>column<span class="w"> </span>-t
+</span></code></pre></div></li>
+<li>Vérifier le swap :
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>swapon<span class="w"> </span>--show
+</span></code></pre></div></li>
+</ul>
+<hr />
+<h2 id="7-notes-pratiques">7. Notes pratiques</h2>
+<ol>
+<li>Toujours créer le point de montage (<code>mkdir /mnt/data</code>) avant <code>mount</code>.</li>
+<li>Préférer UUID pour fiabilité.</li>
+<li>Ne pas monter plusieurs fois la même partition.</li>
+<li>Pour appliquer <code>/etc/fstab</code> sans reboot :
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>sudo<span class="w"> </span>mount<span class="w"> </span>-a
+</span></code></pre></div></li>
+<li>Préférer <code>lazy</code> pour démonter un système de fichiers occupé sans risquer la corruption.</li>
+<li>Utiliser <code>force</code> uniquement en dernier recours sur NFS ou partitions corrompues.</li>
+<li>Utiliser <code>/mnt</code> pour les montages systèmes et internes, et <code>/media/user</code> pour les périphériques amovibles détectés par l’interface graphique.</li>
+</ol>
 
 
 
@@ -1813,10 +2044,10 @@ leds.set_color("RIGHT", "RED")
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "content.code.copy", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
