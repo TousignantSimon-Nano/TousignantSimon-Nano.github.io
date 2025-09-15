@@ -9,6 +9,16 @@ nav:
       - Les dépots : notes_de_cours/semaine_2_depot.md
       - Monter et démonter un disque : notes_de_cours/semaine_2_mount_umount.md
       - Configuration du réseau avec networkmanager : notes_de_cours/semaine_2_reseau_raspberryos.md
+  - Semaine 3 :
+      - Théorie :
+          - Les bases du script bash: notes_de_cours/semaine_3_theorie_scripts_bash.md
+          - La variable path : notes_de_cours/semaine_3_variable_path.md
+          - Le .bashrc : notes_de_cours/semaine_3_.bashrc.md
+  - Exercices :
+      - Semaine 3 :
+          - Partitions, formatage : exercices/exercices_2.1_partition_script_intro.md
+          - Réseau : exercices/exercices_2.2_reseau.md
+      
 
   - Fiche technique: raspberry_pi.md
   - Resources :  

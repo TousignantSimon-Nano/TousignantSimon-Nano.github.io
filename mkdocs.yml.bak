@@ -5,7 +5,22 @@ repo_url: https://github.com/TousignantSimon-Nano/TousignantSimon-Nano.github.io
 nav:
   - Accueil: index.md  
   - Introduction et histoire : notes_de_cours/semaine_1.md  
-  - Raspberry pi, Fiche technique: raspberry_pi.md
+  - Semaine 2 :
+      - Les dépots : notes_de_cours/semaine_2_depot.md
+      - Monter et démonter un disque : notes_de_cours/semaine_2_mount_umount.md
+      - Configuration du réseau avec networkmanager : notes_de_cours/semaine_2_reseau_raspberryos.md
+  - Semaine 3 :
+      - Théorie :
+          - Les bases du script bash: notes_de_cours/semaine_3_theorie_scripts_bash.md
+          - La variable path : notes_de_cours/semaine_3_theorie_scripts_bash.md
+          - Le .bashrc : notes_de_cours/semaine_3_theorie_scripts_bash.md
+  - Exercices :
+      - Semaine 3 :
+          - Partitions, formatage : exercices/exercices_2.1_partition_script_intro.md
+          - Réseau : exercices/exercices_2.2_reseau.md
+      
+
+  - Fiche technique: raspberry_pi.md
   - Resources :  
       - Feuille de triche bash : feuille-triche-bash.md  
       - Logiciels nécessaires : logiciels-necessaires.md
@@ -58,28 +73,44 @@ nav:
   #    - Exercice 11 - Lego EV3 - Démarrage ev3dev: exercices/ex11_enonce.md
   #    - Exercice 12 - Lego EV3 - Compétition de bulldozer: exercices/ex12_enonce.md
 
-theme: 
+theme:
   name: material
-  language: fr
-  palette:
-    - scheme: default
-      primary: blue grey
-      toggle:
-        icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
-    - scheme: slate
-      primary: blue
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
+  icon:
+    logo: fontawesome/solid/database
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.top
     - navigation.tracking
     - content.code.copy
-  icon:
-    logo: fontawesome/solid/cubes
+    - toc.integrate
+  language: fr
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Passer en mode sombre
+      primary: indigo
+      accent: teal
+    - scheme: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Passer en mode clair
+      primary: indigo
+      accent: light blue
+
 
 markdown_extensions:
   - attr_list
