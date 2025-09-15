@@ -1,5 +1,10 @@
 # Théorie : Scripts Bash – Gestion des menus, saisies et fonctions
 
+Tous les script commencent par la ligne :
+```bash
+#!/bin/bash
+```
+
 ## 1. Afficher un menu
 En Bash, un menu peut être affiché avec de simples `echo` :
 ```bash
