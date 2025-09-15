@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://tousignantsimon-nano.github.io/notes_de_cours/sense_hat/sense_emu/">
+        <link rel="canonical" href="https://tousignantsimon-nano.github.io/notes_de_cours/semaine_3_.bashrc/">
       
       
-        <link rel="prev" href="../sense_hat/">
+        <link rel="prev" href="../semaine_3_variable_path/">
       
       
-        <link rel="next" href="../lancer_script/">
+        <link rel="next" href="../../exercices/exercices_2.1_partition_script_intro/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
-        <title>Émulateur - Nano-ordinateurs 420-3A3-VI</title>
+        <title>Le .bashrc - Nano-ordinateurs 420-3A3-VI</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -89,15 +89,15 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-      <link rel="stylesheet" href="../../../css/all.css">
+      <link rel="stylesheet" href="../../css/all.css">
     
-      <link rel="stylesheet" href="../../../css/colors.css">
+      <link rel="stylesheet" href="../../css/colors.css">
     
-      <link rel="stylesheet" href="../../../css/cards.css">
+      <link rel="stylesheet" href="../../css/cards.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -123,7 +123,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#emulateur-de-sense-hat" class="md-skip">
+        <a href="#theorie-le-fichier-bashrc-en-linux" class="md-skip">
           Aller au contenu
         </a>
       
@@ -139,7 +139,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../../.." title="Nano-ordinateurs 420-3A3-VI" class="md-header__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
+    <a href="../.." title="Nano-ordinateurs 420-3A3-VI" class="md-header__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0s224 35.8 224 80m-54.8 134.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3M0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432z"/></svg>
@@ -159,7 +159,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Émulateur
+              Le .bashrc
             
           </span>
         </div>
@@ -260,7 +260,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -277,7 +277,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../semaine_1/" class="md-tabs__link">
+      <a href="../semaine_1/" class="md-tabs__link">
         
   
     
@@ -296,7 +296,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../semaine_2_depot/" class="md-tabs__link">
+        <a href="../semaine_2_depot/" class="md-tabs__link">
           
   
   Semaine 2
@@ -310,17 +310,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../semaine_3_theorie_scripts_bash/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../semaine_3_theorie_scripts_bash/" class="md-tabs__link">
           
   
   Semaine 3
@@ -347,7 +351,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../exercices/exercices_2.1_partition_script_intro/" class="md-tabs__link">
+        <a href="../../exercices/exercices_2.1_partition_script_intro/" class="md-tabs__link">
           
   
   Exercices
@@ -366,7 +370,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../raspberry_pi/" class="md-tabs__link">
+      <a href="../../raspberry_pi/" class="md-tabs__link">
         
   
     
@@ -385,7 +389,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../feuille-triche-bash/" class="md-tabs__link">
+        <a href="../../feuille-triche-bash/" class="md-tabs__link">
           
   
   Resources
@@ -399,21 +403,17 @@
         
   
   
-    
-  
   
     
     
       
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../sense_hat/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../sense_hat/sense_hat/" class="md-tabs__link">
           
   
   Archives 2024
@@ -457,7 +457,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Nano-ordinateurs 420-3A3-VI" class="md-nav__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
+    <a href="../.." title="Nano-ordinateurs 420-3A3-VI" class="md-nav__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0s224 35.8 224 80m-54.8 134.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3M0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432z"/></svg>
@@ -487,7 +487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -507,7 +507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_1/" class="md-nav__link">
+      <a href="../semaine_1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -565,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_2_depot/" class="md-nav__link">
+      <a href="../semaine_2_depot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -586,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_2_mount_umount/" class="md-nav__link">
+      <a href="../semaine_2_mount_umount/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -607,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_2_reseau_raspberryos/" class="md-nav__link">
+      <a href="../semaine_2_reseau_raspberryos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -632,23 +632,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -659,7 +664,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Semaine 3
@@ -670,6 +675,8 @@
                 
   
   
+    
+  
   
   
     
@@ -679,11 +686,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
         
           
           <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
@@ -697,7 +704,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             Théorie
@@ -711,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_3_theorie_scripts_bash/" class="md-nav__link">
+      <a href="../semaine_3_theorie_scripts_bash/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -732,7 +739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_3_variable_path/" class="md-nav__link">
+      <a href="../semaine_3_variable_path/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -750,10 +757,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../semaine_3_.bashrc/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Le .bashrc
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -762,6 +789,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-quest-ce-que-bashrc" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Qu’est-ce que .bashrc ?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-localisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Localisation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-utilisations-courantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Utilisations courantes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Utilisations courantes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ajouter-des-repertoires-a-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Ajouter des répertoires à PATH :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-definir-des-alias" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Définir des alias :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-definir-des-variables-denvironnement" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Définir des variables d’environnement :
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-appliquer-les-modifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Appliquer les modifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-bonnes-pratiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Bonnes pratiques
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -865,7 +990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/exercices_2.1_partition_script_intro/" class="md-nav__link">
+      <a href="../../exercices/exercices_2.1_partition_script_intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -886,7 +1011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/exercices_2.2_reseau/" class="md-nav__link">
+      <a href="../../exercices/exercices_2.2_reseau/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -922,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../raspberry_pi/" class="md-nav__link">
+      <a href="../../raspberry_pi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -980,7 +1105,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../feuille-triche-bash/" class="md-nav__link">
+      <a href="../../feuille-triche-bash/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1001,7 +1126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../logiciels-necessaires/" class="md-nav__link">
+      <a href="../../logiciels-necessaires/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1026,28 +1151,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1058,7 +1178,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Archives 2024
@@ -1069,8 +1189,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1080,11 +1198,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" >
         
           
           <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
@@ -1098,7 +1216,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_1">
             <span class="md-nav__icon md-icon"></span>
             Sense Hat
@@ -1112,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sense_hat/" class="md-nav__link">
+      <a href="../sense_hat/sense_hat/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1130,30 +1248,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Émulateur
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../sense_hat/sense_emu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1162,35 +1260,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Source
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1203,7 +1272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lancer_script/" class="md-nav__link">
+      <a href="../sense_hat/lancer_script/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1224,7 +1293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../couleur/" class="md-nav__link">
+      <a href="../sense_hat/couleur/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1245,7 +1314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../affichage_pixel/" class="md-nav__link">
+      <a href="../sense_hat/affichage_pixel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1266,7 +1335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../joystick/" class="md-nav__link">
+      <a href="../sense_hat/joystick/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1287,7 +1356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../capteur/" class="md-nav__link">
+      <a href="../sense_hat/capteur/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1354,7 +1423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/esp32/" class="md-nav__link">
+      <a href="../esp32/esp32/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1375,7 +1444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/esp32_pin/" class="md-nav__link">
+      <a href="../esp32/esp32_pin/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1396,7 +1465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/setup/" class="md-nav__link">
+      <a href="../esp32/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1417,7 +1486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/premier_sketch/" class="md-nav__link">
+      <a href="../esp32/premier_sketch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1438,7 +1507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/serial_monitor/" class="md-nav__link">
+      <a href="../esp32/serial_monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1459,7 +1528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/millis/" class="md-nav__link">
+      <a href="../esp32/millis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1480,7 +1549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/bluetooth/" class="md-nav__link">
+      <a href="../esp32/bluetooth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1539,7 +1608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/del/" class="md-nav__link">
+      <a href="../esp32/del/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1560,7 +1629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/lcd/" class="md-nav__link">
+      <a href="../esp32/lcd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1627,7 +1696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/bouton/" class="md-nav__link">
+      <a href="../esp32/bouton/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1648,7 +1717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/potentiometre/" class="md-nav__link">
+      <a href="../esp32/potentiometre/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1669,7 +1738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/servo/" class="md-nav__link">
+      <a href="../esp32/servo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1698,7 +1767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/pwm_dac/" class="md-nav__link">
+      <a href="../esp32/pwm_dac/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1765,7 +1834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lego_ev3/lego_ev3/" class="md-nav__link">
+      <a href="../lego_ev3/lego_ev3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1786,7 +1855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lego_ev3/ev3dev/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1807,7 +1876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lego_ev3/ev3dev_installation/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1828,7 +1897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lego_ev3/ev3dev_python/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_python/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1849,7 +1918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lego_ev3/ev3dev_wifi/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_wifi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1870,7 +1939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lego_ev3/ev3dev_RPyC/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_RPyC/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1917,30 +1986,41 @@
   
 
 
-<h1 id="emulateur-de-sense-hat">Emulateur de Sense Hat</h1>
-<p>Il existe des émulateurs de Sense Hat qui nous permet de créer des scripts et d'interragir avec les capteurs sans avoir besoin de posséder la carte physiquement. </p>
-<p>Vous pouvez en trouver un en ligne à l'adresse <a href="https://trinket.io/sense-hat">https://trinket.io/sense-hat</a>. L'interface est assez simple. Vous écrivez votre code en python à gauche et vous avez l'émulation du Sense Hat à droite.</p>
-<p><img alt="Sense Hat Emulateur" class="center shadow" src="\assets\images\sense_hat_02.png" /></p>
-<hr />
-<p>Vous avez accès dans à une version de l'émulateur dans le système d'exploitation Pi OS généralement installé sur un Raspberry Pi. </p>
-<p><img alt="Sense Hat Emulateur" class="center shadow" src="\assets\images\sense_hat_03.png" /></p>
-<p>Il n'est par contre pas installé par défaut dans la version lite ou régulière. Si vous avez à installer Pi OS, sélectionnez la version full. Sinon il est toujours possible d'installer l'émulateur sur une installation déjà existante avec les commandes : </p>
-<p>NOTES SEPT 2024: ne fonctionne pas avec la version actuelle de Pi OS (v12 - Bookworm) - utiliser la version <a href="https://trinket.io/sense-hat">en ligne</a></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python-sense-emu<span class="w"> </span>python3-sense-emu<span class="w"> </span>sense-emu-tools
-</span></code></pre></div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<div class="language-text highlight"><pre><span></span><code>Si vous développez avec l&#39;émulateur, vos scripts python doivent importer sense_emu au lieu de sense_hat
-
-`from sense_emu import SenseHat`
-</code></pre></div>
-</div>
-<h2 id="source">Source</h2>
+<h1 id="theorie-le-fichier-bashrc-en-linux">Théorie : Le fichier .bashrc en Linux</h1>
+<h2 id="1-quest-ce-que-bashrc">1. Qu’est-ce que <code>.bashrc</code> ?</h2>
 <ul>
-<li><a href="https://trinket.io/sense-hat" target="_blank">Emulateur en ligne</a></li>
-<li><a href="https://sense-emu.readthedocs.io/en/v1.1/index.html" target="_blank">Sense-emu</a></li>
+<li><code>.bashrc</code> est un fichier de <strong>configuration spécifique à chaque utilisateur</strong>.</li>
+<li>Il est exécuté à chaque ouverture d’un terminal interactif (bash).</li>
+<li>Il permet de <strong>personnaliser l’environnement</strong> du shell : variables, alias, fonctions, PATH, etc.</li>
 </ul>
+<hr />
+<h2 id="2-localisation">2. Localisation</h2>
+<p>Le fichier <code>.bashrc</code> se trouve dans le <strong>répertoire personnel</strong> de l’utilisateur :
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>/home/utilisateur/.bashrc
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="sb">```</span>bash
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>nano<span class="w"> </span>~/.bashrc
+</span></code></pre></div></p>
+<h2 id="3-utilisations-courantes">3. Utilisations courantes</h2>
+<h3 id="1-ajouter-des-repertoires-a-path">1. Ajouter des répertoires à PATH :</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/home/utilisateur/mes_scripts
+</span></code></pre></div>
+<h3 id="2-definir-des-alias">2. Définir des alias :</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -la&#39;</span>
+</span></code></pre></div>
+<h3 id="3-definir-des-variables-denvironnement">3. Définir des variables d’environnement :</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EDITOR</span><span class="o">=</span>nano
+</span></code></pre></div>
+<h2 id="4-appliquer-les-modifications">4. Appliquer les modifications</h2>
+<p>Après avoir modifié .bashrc, il faut recharger le fichier pour appliquer les changements sans fermer le terminal :
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">source</span><span class="w"> </span>~/.bashrc
+</span></code></pre></div></p>
+<h2 id="5-bonnes-pratiques">5. Bonnes pratiques</h2>
+<p>Toujours faire une sauvegarde avant de modifier .bashrc
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>cp<span class="w"> </span>~/.bashrc<span class="w"> </span>~/.bashrc.backup
+</span></code></pre></div></p>
+<p>Éviter de supprimer les configurations existantes si vous ne savez pas à quoi elles servent.</p>
+<p>Utiliser .bashrc pour tout ce qui doit s’appliquer à chaque session interactive.</p>
 
 
 
@@ -1987,10 +2067,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "content.code.copy", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>
