@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://tousignantsimon-nano.github.io/exercices/ex11_enonce/">
+        <link rel="canonical" href="https://tousignantsimon-nano.github.io/exercices/exercices_4.1_linux_ssh_users_groups/">
       
       
+        <link rel="prev" href="../exercices_2.2_reseau/">
+      
+      
+        <link rel="next" href="../../raspberry_pi/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Lego EV3 - Démarrage ev3dev - Nano-ordinateurs 420-3A3-VI</title>
+        <title>Utilisateurs SSH - Nano-ordinateurs 420-3A3-VI</title>
       
     
     
@@ -119,7 +123,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lego-ev3-demarrage-ev3dev" class="md-skip">
+        <a href="#exercices-linux-gestion-des-utilisateurs-groupes-et-ssh" class="md-skip">
           Aller au contenu
         </a>
       
@@ -155,7 +159,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lego EV3 - Démarrage ev3dev
+              Utilisateurs SSH
             
           </span>
         </div>
@@ -351,16 +355,20 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../exercices_2.1_partition_script_intro/" class="md-tabs__link">
           
   
@@ -904,23 +912,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -931,7 +944,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Exercices
@@ -1030,6 +1043,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1039,11 +1054,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
@@ -1057,7 +1072,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2">
             <span class="md-nav__icon md-icon"></span>
             Semaine 4
@@ -1068,10 +1083,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../exercices_4.1_linux_ssh_users_groups/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Utilisateurs SSH
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1080,6 +1115,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-1-creation-de-groupes-et-dutilisateurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 1 : Création de groupes et d’utilisateurs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-2-limiter-lacces-ssh-pour-certains-utilisateurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 2 : Limiter l’accès SSH pour certains utilisateurs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-3-limiter-lacces-ssh-par-groupe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 3 : Limiter l’accès SSH par groupe
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-4-connexion-ssh-uniquement-par-cle-rsa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 4 : Connexion SSH uniquement par clé RSA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verifications-et-bonus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vérifications et bonus
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2046,11 +2146,88 @@
   
 
 
-<h1 id="lego-ev3-demarrage-ev3dev">Lego EV3 - Démarrage ev3dev</h1>
-<p>En équipe de deux, faites l'installation de ev3dev sur une brique LEGO MINDSTORM EV3</p>
-<p>Une fois la communication avec la brique établie, faites un montage en lego sur 4 roues avec un essieu motorisé.  Ajouter un détecteur de toucher sur le devant.</p>
-<p>Écrivez un programme qui va faire avancer votre montage de l'équivalent d'un tour de roue quand on appuie sur le détecteur, puis qui va reculer de la même distance quand on appuie à nouveau.</p>
-<p>Vous pouvez aussi manipuler les DEL et tester la génération de voix.</p>
+<h1 id="exercices-linux-gestion-des-utilisateurs-groupes-et-ssh">Exercices Linux : gestion des utilisateurs, groupes et SSH</h1>
+<h2 id="exercice-1-creation-de-groupes-et-dutilisateurs">Exercice 1 : Création de groupes et d’utilisateurs</h2>
+<ol>
+<li>Créez les groupes suivants :</li>
+<li><code>administrateurs</code></li>
+<li><code>dev</code></li>
+<li>
+<p><code>guest</code></p>
+</li>
+<li>
+<p>Créez les utilisateurs suivants avec un mot de passe temporaire :</p>
+</li>
+<li><code>alice</code> dans le groupe <code>administrateurs</code></li>
+<li><code>bob</code> dans le groupe <code>dev</code></li>
+<li>
+<p><code>carol</code> dans le groupe <code>guest</code></p>
+</li>
+<li>
+<p>Vérifiez que les utilisateurs sont bien dans les bons groupes.</p>
+</li>
+</ol>
+<p><strong>Commandes utiles :</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>groupadd<span class="w"> </span>&lt;nom_groupe&gt;
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>useradd<span class="w"> </span>-m<span class="w"> </span>-G<span class="w"> </span>&lt;groupe&gt;<span class="w"> </span>&lt;nom_utilisateur&gt;
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>passwd<span class="w"> </span>&lt;nom_utilisateur&gt;
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>id<span class="w"> </span>&lt;nom_utilisateur&gt;
+</span></code></pre></div></p>
+<hr />
+<h2 id="exercice-2-limiter-lacces-ssh-pour-certains-utilisateurs">Exercice 2 : Limiter l’accès SSH pour certains utilisateurs</h2>
+<ol>
+<li>Autorisez uniquement <code>alice</code> et <code>bob</code> à se connecter via SSH.</li>
+<li>Bloquez <code>carol</code> pour qu’elle ne puisse pas se connecter.</li>
+</ol>
+<p><strong>Indice :</strong> modifier <code>/etc/ssh/sshd_config</code> 
+- Paramètres utiles : <code>AllowUsers</code>, <code>DenyUsers</code>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/ssh/sshd_config
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># Exemple:</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>AllowUsers<span class="w"> </span>alice<span class="w"> </span>bob
+</span></code></pre></div>
+- Redémarrez SSH :
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>ssh
+</span></code></pre></div></p>
+<hr />
+<h2 id="exercice-3-limiter-lacces-ssh-par-groupe">Exercice 3 : Limiter l’accès SSH par groupe</h2>
+<ol>
+<li>Créez un utilisateur <code>dave</code> dans le groupe <code>dev</code>.</li>
+<li>Configurez SSH pour que <strong>tous les utilisateurs du groupe <code>dev</code></strong> puissent se connecter.</li>
+<li>Bloquez tous les autres groupes.</li>
+</ol>
+<p><strong>Astuce :</strong> 
+- SSH peut utiliser <code>AllowGroups</code> dans <code>/etc/ssh/sshd_config</code> :
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>AllowGroups<span class="w"> </span>dev
+</span></code></pre></div></p>
+<hr />
+<h2 id="exercice-4-connexion-ssh-uniquement-par-cle-rsa">Exercice 4 : Connexion SSH uniquement par clé RSA</h2>
+<ol>
+<li>Pour l’utilisateur <code>alice</code> :</li>
+<li>Générez une clé RSA sur un poste client :
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>rsa<span class="w"> </span>-b<span class="w"> </span><span class="m">4096</span>
+</span></code></pre></div></li>
+<li>Copiez la clé publique sur le serveur :
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ssh-copy-id<span class="w"> </span>alice@serveur
+</span></code></pre></div></li>
+<li>Configurez SSH pour que <code>alice</code> <strong>ne puisse se connecter qu’avec sa clé RSA</strong> et non avec un mot de passe.</li>
+</ol>
+<p><strong>Indice :</strong>
+- Modifier <code>/etc/ssh/sshd_config</code> :
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>PasswordAuthentication<span class="w"> </span>no
+</span></code></pre></div>
+- Redémarrer SSH :
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>ssh
+</span></code></pre></div></p>
+<hr />
+<h2 id="verifications-et-bonus">Vérifications et bonus</h2>
+<ul>
+<li>Vérifiez la connexion SSH pour chaque utilisateur et notez les résultats.</li>
+<li>Bonus : créer un utilisateur <code>eve</code> qui peut se connecter via SSH mais <strong>uniquement depuis une IP spécifique</strong>.</li>
+</ul>
+<p><strong>Indices pour le bonus :</strong>
+- Regardez la directive <code>Match</code> dans <code>/etc/ssh/sshd_config</code>.
+- Vous pouvez combiner <code>Match User eve</code> avec <code>Address &lt;IP&gt;</code>.
+- N’oubliez pas de redémarrer SSH après la modification.</p>
 
 
 
