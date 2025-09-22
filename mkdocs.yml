@@ -14,6 +14,11 @@ nav:
           - Les bases du script bash: notes_de_cours/semaine_3_theorie_scripts_bash.md
           - La variable path : notes_de_cours/semaine_3_variable_path.md
           - Le .bashrc : notes_de_cours/semaine_3_.bashrc.md
+  - Semaine 4 :
+      - Les utilisateurs : notes_de_cours/semaine_4_utilisateurs_groupes_linux.md
+      - Le serveur openssh : notes_de_cours/semaine_4_openssh_server.md
+      - La connexion par clé : notes_de_cours/semaine_4_generation_cles_ssh.md
+      
   - Exercices :
       - Semaine 3 :
           - Partitions, formatage : exercices/exercices_2.1_partition_script_intro.md
