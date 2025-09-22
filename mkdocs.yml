@@ -23,7 +23,8 @@ nav:
       - Semaine 3 :
           - Partitions, formatage : exercices/exercices_2.1_partition_script_intro.md
           - Réseau : exercices/exercices_2.2_reseau.md
-      
+      - Semaine 4 :
+          - Utilisateurs SSH : exercices/exercices_4.1_linux_ssh_users_groups.md
 
   - Fiche technique: raspberry_pi.md
   - Resources :  
