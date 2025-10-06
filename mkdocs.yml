@@ -18,14 +18,20 @@ nav:
       - Les utilisateurs : notes_de_cours/semaine_4_utilisateurs_groupes_linux.md
       - Le serveur openssh : notes_de_cours/semaine_4_openssh_server.md
       - La connexion par clé : notes_de_cours/semaine_4_generation_cles_ssh.md
-      
+  - Semaine 6 :
+      - SSH et SCP : notes_de_cours/semaine_6_scp.md
+      - SCP et l'explorateur : notes_de_cours/semaine_6_notes_ssh_explorateur.md
+      - Trouver un fichier : notes_de_cours/semaine_6_find.md
+      - Chercher du contenu : notes_de_cours/semaine_6_grep.md
+      - Festion des processus : notes_de_cours/semaine_6_gestion_des_processus.md
+      - samba : notes_de_cours/semaine_6_samba.md
   - Exercices :
       - Semaine 3 :
           - Partitions, formatage : exercices/exercices_2.1_partition_script_intro.md
           - Réseau : exercices/exercices_2.2_reseau.md
       - Semaine 4 :
           - Utilisateurs SSH : exercices/exercices_4.1_linux_ssh_users_groups.md
-
+  
   - Fiche technique: raspberry_pi.md
   - Resources :  
       - Feuille de triche bash : feuille-triche-bash.md  
