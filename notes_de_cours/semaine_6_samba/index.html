@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://tousignantsimon-nano.github.io/notes_de_cours/sense_hat/joystick/">
+        <link rel="canonical" href="https://tousignantsimon-nano.github.io/notes_de_cours/semaine_6_samba/">
       
       
-        <link rel="prev" href="../affichage_pixel/">
+        <link rel="prev" href="../semaine_6_gestion_des_processus/">
       
       
-        <link rel="next" href="../capteur/">
+        <link rel="next" href="../../exercices/exercices_2.1_partition_script_intro/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
-        <title>Utilisation du joystick - Nano-ordinateurs 420-3A3-VI</title>
+        <title>samba - Nano-ordinateurs 420-3A3-VI</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -89,15 +89,15 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-      <link rel="stylesheet" href="../../../css/all.css">
+      <link rel="stylesheet" href="../../css/all.css">
     
-      <link rel="stylesheet" href="../../../css/colors.css">
+      <link rel="stylesheet" href="../../css/colors.css">
     
-      <link rel="stylesheet" href="../../../css/cards.css">
+      <link rel="stylesheet" href="../../css/cards.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -123,7 +123,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#utilisation-du-joystick" class="md-skip">
+        <a href="#samba-et-interoperabilite-avec-windows" class="md-skip">
           Aller au contenu
         </a>
       
@@ -139,7 +139,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../../.." title="Nano-ordinateurs 420-3A3-VI" class="md-header__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
+    <a href="../.." title="Nano-ordinateurs 420-3A3-VI" class="md-header__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0s224 35.8 224 80m-54.8 134.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3M0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432z"/></svg>
@@ -159,7 +159,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Utilisation du joystick
+              samba
             
           </span>
         </div>
@@ -260,7 +260,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -277,7 +277,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../semaine_1/" class="md-tabs__link">
+      <a href="../semaine_1/" class="md-tabs__link">
         
   
     
@@ -296,7 +296,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../semaine_2_depot/" class="md-tabs__link">
+        <a href="../semaine_2_depot/" class="md-tabs__link">
           
   
   Semaine 2
@@ -320,7 +320,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../semaine_3_theorie_scripts_bash/" class="md-tabs__link">
+        <a href="../semaine_3_theorie_scripts_bash/" class="md-tabs__link">
           
   
   Semaine 3
@@ -341,7 +341,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../semaine_4_utilisateurs_groupes_linux/" class="md-tabs__link">
+        <a href="../semaine_4_utilisateurs_groupes_linux/" class="md-tabs__link">
           
   
   Semaine 4
@@ -355,11 +355,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../semaine_6_scp/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../semaine_6_scp/" class="md-tabs__link">
           
   
   Semaine 6
@@ -383,7 +385,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../exercices/exercices_2.1_partition_script_intro/" class="md-tabs__link">
+        <a href="../../exercices/exercices_2.1_partition_script_intro/" class="md-tabs__link">
           
   
   Exercices
@@ -402,7 +404,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../raspberry_pi/" class="md-tabs__link">
+      <a href="../../raspberry_pi/" class="md-tabs__link">
         
   
     
@@ -421,7 +423,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../feuille-triche-bash/" class="md-tabs__link">
+        <a href="../../feuille-triche-bash/" class="md-tabs__link">
           
   
   Resources
@@ -435,21 +437,17 @@
         
   
   
-    
-  
   
     
     
       
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../sense_hat/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../sense_hat/sense_hat/" class="md-tabs__link">
           
   
   Archives 2024
@@ -493,7 +491,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Nano-ordinateurs 420-3A3-VI" class="md-nav__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
+    <a href="../.." title="Nano-ordinateurs 420-3A3-VI" class="md-nav__button md-logo" aria-label="Nano-ordinateurs 420-3A3-VI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0s224 35.8 224 80m-54.8 134.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3M0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432z"/></svg>
@@ -523,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -543,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_1/" class="md-nav__link">
+      <a href="../semaine_1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -601,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_2_depot/" class="md-nav__link">
+      <a href="../semaine_2_depot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -622,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_2_mount_umount/" class="md-nav__link">
+      <a href="../semaine_2_mount_umount/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -643,7 +641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_2_reseau_raspberryos/" class="md-nav__link">
+      <a href="../semaine_2_reseau_raspberryos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -747,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_3_theorie_scripts_bash/" class="md-nav__link">
+      <a href="../semaine_3_theorie_scripts_bash/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -768,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_3_variable_path/" class="md-nav__link">
+      <a href="../semaine_3_variable_path/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_3_.bashrc/" class="md-nav__link">
+      <a href="../semaine_3_.bashrc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -863,7 +861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_4_utilisateurs_groupes_linux/" class="md-nav__link">
+      <a href="../semaine_4_utilisateurs_groupes_linux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -884,7 +882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_4_openssh_server/" class="md-nav__link">
+      <a href="../semaine_4_openssh_server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -905,7 +903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_4_generation_cles_ssh/" class="md-nav__link">
+      <a href="../semaine_4_generation_cles_ssh/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -930,23 +928,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -957,7 +960,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Semaine 6
@@ -971,7 +974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_6_scp/" class="md-nav__link">
+      <a href="../semaine_6_scp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -992,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_6_notes_ssh_explorateur/" class="md-nav__link">
+      <a href="../semaine_6_notes_ssh_explorateur/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1013,7 +1016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_6_find/" class="md-nav__link">
+      <a href="../semaine_6_find/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1034,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_6_grep/" class="md-nav__link">
+      <a href="../semaine_6_grep/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1055,7 +1058,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaine_6_gestion_des_processus/" class="md-nav__link">
+      <a href="../semaine_6_gestion_des_processus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1073,10 +1076,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../semaine_6_samba/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1085,6 +1097,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1180,7 +1193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/exercices_2.1_partition_script_intro/" class="md-nav__link">
+      <a href="../../exercices/exercices_2.1_partition_script_intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1201,7 +1214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/exercices_2.2_reseau/" class="md-nav__link">
+      <a href="../../exercices/exercices_2.2_reseau/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1268,7 +1281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/exercices_4.1_linux_ssh_users_groups/" class="md-nav__link">
+      <a href="../../exercices/exercices_4.1_linux_ssh_users_groups/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1304,7 +1317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../raspberry_pi/" class="md-nav__link">
+      <a href="../../raspberry_pi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1362,7 +1375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../feuille-triche-bash/" class="md-nav__link">
+      <a href="../../feuille-triche-bash/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1383,7 +1396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../logiciels-necessaires/" class="md-nav__link">
+      <a href="../../logiciels-necessaires/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1408,28 +1421,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
           
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1440,7 +1448,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             Archives 2024
@@ -1451,8 +1459,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1462,11 +1468,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_1" >
         
           
           <label class="md-nav__link" for="__nav_10_1" id="__nav_10_1_label" tabindex="0">
@@ -1480,7 +1486,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10_1">
             <span class="md-nav__icon md-icon"></span>
             Sense Hat
@@ -1494,7 +1500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sense_hat/" class="md-nav__link">
+      <a href="../sense_hat/sense_hat/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1515,7 +1521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sense_emu/" class="md-nav__link">
+      <a href="../sense_hat/sense_emu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1536,7 +1542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lancer_script/" class="md-nav__link">
+      <a href="../sense_hat/lancer_script/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1557,7 +1563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../couleur/" class="md-nav__link">
+      <a href="../sense_hat/couleur/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1578,7 +1584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../affichage_pixel/" class="md-nav__link">
+      <a href="../sense_hat/affichage_pixel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1596,30 +1602,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Utilisation du joystick
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../sense_hat/joystick/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1628,35 +1614,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ecouter-un-evenement-du-joystick" class="md-nav__link">
-    <span class="md-ellipsis">
-      Écouter un événement du joystick
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1669,7 +1626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../capteur/" class="md-nav__link">
+      <a href="../sense_hat/capteur/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1736,7 +1693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/esp32/" class="md-nav__link">
+      <a href="../esp32/esp32/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1757,7 +1714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/esp32_pin/" class="md-nav__link">
+      <a href="../esp32/esp32_pin/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1778,7 +1735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/setup/" class="md-nav__link">
+      <a href="../esp32/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1799,7 +1756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/premier_sketch/" class="md-nav__link">
+      <a href="../esp32/premier_sketch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1820,7 +1777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/serial_monitor/" class="md-nav__link">
+      <a href="../esp32/serial_monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1841,7 +1798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/millis/" class="md-nav__link">
+      <a href="../esp32/millis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1862,7 +1819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/bluetooth/" class="md-nav__link">
+      <a href="../esp32/bluetooth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1921,7 +1878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/del/" class="md-nav__link">
+      <a href="../esp32/del/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1942,7 +1899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/lcd/" class="md-nav__link">
+      <a href="../esp32/lcd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2009,7 +1966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/bouton/" class="md-nav__link">
+      <a href="../esp32/bouton/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2030,7 +1987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/potentiometre/" class="md-nav__link">
+      <a href="../esp32/potentiometre/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2051,7 +2008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/servo/" class="md-nav__link">
+      <a href="../esp32/servo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2080,7 +2037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../esp32/pwm_dac/" class="md-nav__link">
+      <a href="../esp32/pwm_dac/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2147,7 +2104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lego_ev3/lego_ev3/" class="md-nav__link">
+      <a href="../lego_ev3/lego_ev3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2168,7 +2125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lego_ev3/ev3dev/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2189,7 +2146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lego_ev3/ev3dev_installation/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2210,7 +2167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lego_ev3/ev3dev_python/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_python/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2231,7 +2188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lego_ev3/ev3dev_wifi/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_wifi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2252,7 +2209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lego_ev3/ev3dev_RPyC/" class="md-nav__link">
+      <a href="../lego_ev3/ev3dev_RPyC/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2299,70 +2256,83 @@
   
 
 
-<h1 id="utilisation-du-joystick">Utilisation du joystick</h1>
-<p>Le Sense Hat possède aussi un joystick qui nous permet de capter les touches haut, bas, gauche, droite ainsi qu'un clic. Ces touches sont aussi "mappé" sur le clavier avec les flèches de directions et le clic par la touche entrée. Quand une direction est détectée, un évènement est lancé et est stocké dans un objet "event". Pour capter ces évènements, on va dans notre boucle de traitement on va aller chercher les évènements avec la commande <code>sense.stick.get_events()</code>. Ensuite on pourra utiliser les propriétés suivantes de l'objet "event": </p>
+<h1 id="samba-et-interoperabilite-avec-windows">Samba et interopérabilité avec Windows</h1>
+<h1 id="samba-et-interoperabilite-avec-windows_1">Samba et interopérabilité avec Windows</h1>
+<p><strong>Samba</strong> est une implémentation libre du protocole <strong>SMB/CIFS</strong> (Server Message Block / Common Internet File System), utilisé par Microsoft Windows pour le partage de fichiers, d’imprimantes et de ressources réseau.</p>
+<h2 id="fonctionnalites-principales">Fonctionnalités principales</h2>
 <ul>
-<li>direction : Obtenir la direction, donc la touche pressée (up, down, left, right, middle). Middle représente le clic.</li>
-<li>action : Pour savoir si la touche est pressée ou relâchée (pressed, released).</li>
+<li>Partage de dossiers et imprimantes entre Linux/Unix et Windows  </li>
+<li>Intégration dans un domaine Windows <strong>Active Directory</strong>  </li>
+<li>Authentification via les comptes Windows  </li>
+<li>Possibilité pour un serveur Linux de fonctionner comme un serveur de fichiers Windows  </li>
 </ul>
-<p>Exemple, je veux déclencher un traitement lorsque je clique sur le joystick : </p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span>
-<span class="normal"><a href="#__codelineno-0-7">7</a></span>
-<span class="normal"><a href="#__codelineno-0-8">8</a></span>
-<span class="normal"><a href="#__codelineno-0-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sense_emu</span><span class="w"> </span><span class="kn">import</span> <span class="n">SenseHat</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="n">sense</span> <span class="o">=</span> <span class="n">SenseHat</span><span class="p">()</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">sense</span><span class="o">.</span><span class="n">stick</span><span class="o">.</span><span class="n">get_events</span><span class="p">():</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>        <span class="c1"># Je vérifie qu&#39;il y a clic du joystick </span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>    <span class="c1"># Attention appelé quand appuyé ET quand relaché</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>        <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">direction</span> <span class="o">==</span> <span class="s2">&quot;middle&quot;</span><span class="p">:</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>            <span class="c1"># Mon traitement</span>
-</span></code></pre></div></td></tr></table></div>
-<h2 id="ecouter-un-evenement-du-joystick">Écouter un événement du joystick</h2>
-<p>Il est aussi possible de "brancher" un événement du joystick à une fonction. Chaque direction à une propriété associée à laquelle on donne la fonction: </p>
+<h2 id="avantages">Avantages</h2>
 <ul>
-<li><code>sense.stick.direction_up</code></li>
-<li><code>sense.stick.direction_down</code></li>
-<li><code>sense.stick.direction_left</code></li>
-<li><code>sense.stick.direction_right</code></li>
-<li><code>sense.stick.direction_middle</code></li>
+<li>Permet une interopérabilité fluide entre Linux et Windows  </li>
+<li>Facilite le déploiement de solutions mixtes dans un environnement réseau existant  </li>
+<li>Maintient la compatibilité avec les outils Windows standard</li>
 </ul>
-<div class="language-python highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Exemple d'utilisation</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span>
-<span class="normal"><a href="#__codelineno-1-14">14</a></span>
-<span class="normal"><a href="#__codelineno-1-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sense_emu</span><span class="w"> </span><span class="kn">import</span> <span class="n">SenseHat</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">sense</span> <span class="o">=</span> <span class="n">SenseHat</span><span class="p">()</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="n">rouge</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">point_rouge</span><span class="p">():</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a>    <span class="n">sense</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="n">rouge</span><span class="p">)</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="c1"># On associe la fonction point_rouge au clic</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="n">sense</span><span class="o">.</span><span class="n">stick</span><span class="o">.</span><span class="n">direction_middle</span> <span class="o">=</span> <span class="n">point_rouge</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a>    <span class="c1"># Ici le pass sert uniquement à rester dans la boucle</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a>    <span class="c1"># dès que le bouton sera appuyé la fonction va être lancée.</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a>    <span class="k">pass</span>
-</span></code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="schema-simplifie">Schéma simplifié</h2>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>+----------------+        +----------------+        +----------------+
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>|                |  SMB   |                |  SMB   |                |
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>|   Linux/Unix   +--------&gt;     Samba      +--------&gt;    Windows     |
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>|   (serveur)    |        |   (serveur)    |        |  (client)     |
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>+----------------+        +----------------+        +----------------+
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>---
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>## Exemple simple de partage Samba
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>1. Installer Samba :  
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>```bash
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>sudo apt install samba   # Debian/Ubuntu
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>sudo yum install samba   # CentOS/RHEL
+</span></code></pre></div>
+2. Configurer un partage dans /etc/samba/smb.conf :<br />
+<div class="language-ini highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">[partage]</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">   </span><span class="na">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/srv/partage</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">   </span><span class="na">read only</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">no</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">   </span><span class="na">browsable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span>
+</span></code></pre></div>
+3. Redémarrer le service :
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>smbd
+</span></code></pre></div></p>
+<ol>
+<li>Accéder via windows 
+-&gt; explorateur -&gt; chemin d'accès -&gt; \nom_serveur\partage</li>
+</ol>
+<h2 id="problemes-courants-avec-samba-et-windows">Problèmes courants avec Samba et Windows</h2>
+<ol>
+<li>Chiffrement et compatibilité :
+Windows utilise souvent le chiffrement SMB3 pour les partages récents. Si le serveur Samba est ancien ou mal configuré, Windows peut refuser la connexion. Les erreurs typiques incluent “Access denied” ou “Connection refused”. Cela peut aussi provoquer des problèmes d’authentification avec Active Directory.</li>
+</ol>
+<p>Solutions :</p>
+<p>Mettre Samba à jour vers une version récente (4.10+ recommandée).</p>
+<p>Configurer le protocole SMB et le chiffrement dans smb.conf pour exiger SMB3 et le chiffrement.</p>
+<p>Vérifier que le client Windows accepte le protocole utilisé (SMB2/SMB3).</p>
+<ol>
+<li>
+<p>Problèmes de permissions :
+Les droits Samba ne sont pas toujours identiques aux permissions Linux/Unix. Vérifier les permissions POSIX et la directive valid users dans smb.conf.</p>
+</li>
+<li>
+<p>Problèmes d’utilisateur ou mot de passe :
+Si Windows ne reconnaît pas un utilisateur, vérifier la synchronisation des comptes Samba/AD. On peut utiliser pdbedit -L pour lister les utilisateurs Samba.</p>
+</li>
+<li>
+<p>Partages non visibles :
+Si le partage n’apparaît pas dans l’explorateur Windows, vérifier que browsable = yes est activé, et que le firewall Linux laisse passer le port TCP 445.</p>
+</li>
+<li>
+<p>Encodage des caractères :
+Les noms de fichiers avec accents ou caractères spéciaux peuvent poser problème. On peut ajouter dans smb.conf :
+<div class="language-ini highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="na">unix charset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">UTF-8</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="na">display charset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">UTF-8</span>
+</span></code></pre></div></p>
+</li>
+</ol>
 
 
 
@@ -2409,10 +2379,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "content.code.copy", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>
