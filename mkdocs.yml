@@ -37,6 +37,7 @@ nav:
           - Réseau : exercices/exercices_2.2_reseau.md
       - Semaine 4 :
           - Utilisateurs SSH : exercices/exercices_4.1_linux_ssh_users_groups.md
+      - Station Météo Interactive : exercices/ex_dht11_lcd_servo_button.md
   
   - Fiche technique: raspberry_pi.md
   - Resources :  
