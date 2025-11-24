@@ -25,6 +25,12 @@ nav:
       - Chercher du contenu : notes_de_cours/semaine_6_grep.md
       - Festion des processus : notes_de_cours/semaine_6_gestion_des_processus.md
       - samba : notes_de_cours/semaine_6_samba.md
+  - Semaine 7 :
+      - Arduino concepts : notes_de_cours/semaine_7_arduino_concepts.md
+  - Semaine 8 :
+      - I2C, Servomoteur et DHT11 : notes_de_cours/semaine_8_i2c_servo_dht11.md
+  - Semaine 9 :
+      - Interruptions et Volatile : notes_de_cours/semaine_9_interrupts_volatile.md
   - Exercices :
       - Semaine 3 :
           - Partitions, formatage : exercices/exercices_2.1_partition_script_intro.md
