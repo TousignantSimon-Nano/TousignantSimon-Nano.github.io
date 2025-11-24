@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://tousignantsimon-nano.github.io/notes_de_cours/semaine_8_i2c_servo_dht11/">
+        <link rel="canonical" href="https://tousignantsimon-nano.github.io/notes_de_cours/semaine_12_interrupts_volatile/">
       
       
-        <link rel="prev" href="../semaine_7_arduino_concepts/">
+        <link rel="prev" href="../semaine_11_i2c_servo_dht11/">
       
       
-        <link rel="next" href="../semaine_9_interrupts_volatile/">
+        <link rel="next" href="../../exercices/exercices_2.1_partition_script_intro/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>I2C, Servomoteur et DHT11 - Nano-ordinateurs 420-3A3-VI</title>
+        <title>Interruptions et Volatile - Nano-ordinateurs 420-3A3-VI</title>
       
     
     
@@ -123,7 +123,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#arduino-i2c-servomoteur-et-capteur-dht11" class="md-skip">
+        <a href="#arduino-interruptions-et-volatile" class="md-skip">
           Aller au contenu
         </a>
       
@@ -159,7 +159,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              I2C, Servomoteur et DHT11
+              Interruptions et Volatile
             
           </span>
         </div>
@@ -377,10 +377,28 @@
     
     
       <li class="md-tabs__item">
-        <a href="../semaine_7_arduino_concepts/" class="md-tabs__link">
+        <a href="../semaine_10_arduino_concepts/" class="md-tabs__link">
           
   
-  Semaine 7
+  Semaine 10
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../semaine_11_i2c_servo_dht11/" class="md-tabs__link">
+          
+  
+  Semaine 11
 
         </a>
       </li>
@@ -400,25 +418,7 @@
         <a href="./" class="md-tabs__link">
           
   
-  Semaine 8
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../semaine_9_interrupts_volatile/" class="md-tabs__link">
-          
-  
-  Semaine 9
+  Semaine 12
 
         </a>
       </li>
@@ -1173,7 +1173,7 @@
             
   
   <span class="md-ellipsis">
-    Semaine 7
+    Semaine 10
   </span>
   
 
@@ -1183,7 +1183,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            Semaine 7
+            Semaine 10
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1194,11 +1194,77 @@
   
   
     <li class="md-nav__item">
-      <a href="../semaine_7_arduino_concepts/" class="md-nav__link">
+      <a href="../semaine_10_arduino_concepts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Arduino concepts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Semaine 11
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Semaine 11
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semaine_11_i2c_servo_dht11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    I2C, Servomoteur et DHT11
   </span>
   
 
@@ -1237,24 +1303,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    Semaine 8
+    Semaine 12
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            Semaine 8
+            Semaine 12
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1278,7 +1344,7 @@
           
   
   <span class="md-ellipsis">
-    I2C, Servomoteur et DHT11
+    Interruptions et Volatile
   </span>
   
 
@@ -1289,7 +1355,7 @@
         
   
   <span class="md-ellipsis">
-    I2C, Servomoteur et DHT11
+    Interruptions et Volatile
   </span>
   
 
@@ -1311,28 +1377,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-lecran-lcd-et-le-module-i2c" class="md-nav__link">
+  <a href="#1-interruptions-serie-avec-serialread-toggle-led" class="md-nav__link">
     <span class="md-ellipsis">
-      1. L'écran LCD et le module I2C
+      1. Interruptions Série avec Serial.read() (Toggle LED)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. L'écran LCD et le module I2C">
+    <nav class="md-nav" aria-label="1. Interruptions Série avec Serial.read() (Toggle LED)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#quest-ce-que-li2c-inter-integrated-circuit" class="md-nav__link">
+  <a href="#la-methode-serialevent" class="md-nav__link">
     <span class="md-ellipsis">
-      Qu'est-ce que l'I2C ? (Inter-Integrated Circuit)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#utilisation-avec-lecran-lcd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Utilisation avec l'écran LCD
+      La méthode SerialEvent()
     </span>
   </a>
   
@@ -1344,28 +1401,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-le-servomoteur" class="md-nav__link">
+  <a href="#2-interruptions-sur-broches-digitales-arduino-uno-toggle-led" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Le Servomoteur
+      2. Interruptions sur Broches Digitales (Arduino UNO) (Toggle LED)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Le Servomoteur">
+    <nav class="md-nav" aria-label="2. Interruptions sur Broches Digitales (Arduino UNO) (Toggle LED)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#alimentation-des-servomoteurs-source-externe" class="md-nav__link">
+  <a href="#broches-dinterruption-sur-arduino-uno" class="md-nav__link">
     <span class="md-ellipsis">
-      Alimentation des servomoteurs (Source externe)
+      Broches d'interruption sur Arduino UNO
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#comment-ca-marche" class="md-nav__link">
+  <a href="#la-fonction-attachinterrupt" class="md-nav__link">
     <span class="md-ellipsis">
-      Comment ça marche ?
+      La fonction attachInterrupt()
     </span>
   </a>
   
@@ -1377,37 +1434,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-le-capteur-de-temperature-et-dhumidite-dht11" class="md-nav__link">
+  <a href="#3-la-notion-de-volatile-pour-les-interruptions" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Le Capteur de Température et d'Humidité DHT11
+      3. La Notion de volatile pour les Interruptions
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Le Capteur de Température et d'Humidité DHT11">
+    <nav class="md-nav" aria-label="3. La Notion de volatile pour les Interruptions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#caracteristiques" class="md-nav__link">
+  <a href="#pourquoi-volatile" class="md-nav__link">
     <span class="md-ellipsis">
-      Caractéristiques :
+      Pourquoi volatile ?
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#connexion" class="md-nav__link">
+  <a href="#utilisation-pratique" class="md-nav__link">
     <span class="md-ellipsis">
-      Connexion :
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#librairie-necessaire" class="md-nav__link">
-    <span class="md-ellipsis">
-      Librairie nécessaire :
+      Utilisation pratique :
     </span>
   </a>
   
@@ -1422,72 +1470,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Semaine 9
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
-            <span class="md-nav__icon md-icon"></span>
-            Semaine 9
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../semaine_9_interrupts_volatile/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Interruptions et Volatile
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -2667,142 +2649,173 @@
   
 
 
-<h1 id="arduino-i2c-servomoteur-et-capteur-dht11">Arduino : I2C, Servomoteur et Capteur DHT11</h1>
-<p>Cette semaine, nous allons explorer des composants couramment utilisés avec l'Arduino : l'écran LCD via un module I2C, les servomoteurs et le capteur de température/humidité DHT11.</p>
+<h1 id="arduino-interruptions-et-volatile">Arduino : Interruptions et Volatile</h1>
+<p>Cette semaine, nous allons explorer les interruptions et la notion de <code>volatile</code>, des concepts essentiels pour gérer les événements en temps réel et optimiser la réactivité de vos programmes Arduino.</p>
 <hr />
-<h2 id="1-lecran-lcd-et-le-module-i2c">1. L'écran LCD et le module I2C</h2>
-<p>Un écran LCD (Liquid Crystal Display) est un composant essentiel pour afficher des informations de manière lisible. Les écrans LCD 16x02 (16 caractères sur 2 lignes) sont très populaires. Pour simplifier leur câblage, on utilise souvent un module I2C.</p>
-<p><img alt="I2C LCD Connection" class="center shadow" src="../../assets/images/i2c_lcd_connection.jpg" /></p>
-<p><img alt="I2C Bus Connection" class="center shadow" src="../../assets/images/servo_connection.webp" /></p>
-<h3 id="quest-ce-que-li2c-inter-integrated-circuit">Qu'est-ce que l'I2C ? (Inter-Integrated Circuit)</h3>
-<p>L'<strong>I2C</strong> est un protocole de communication série qui permet à plusieurs "maîtres" (comme l'Arduino) de communiquer avec plusieurs "esclaves" (comme le module I2C de l'écran LCD) en utilisant seulement deux fils :
-- <strong>SDA (Serial Data Line)</strong> : Pour l'envoi et la réception des données.
-- <strong>SCL (Serial Clock Line)</strong> : Pour la synchronisation des données.</p>
-<p><strong>Avantages de l'I2C :</strong>
-- <strong>Simplicité de câblage</strong> : Réduit le nombre de broches nécessaires sur l'Arduino (seulement 2 broches, plus l'alimentation).
-- <strong>Multiples périphériques</strong> : Plusieurs composants I2C peuvent être connectés sur les mêmes deux fils, chacun ayant une adresse unique.</p>
-<h3 id="utilisation-avec-lecran-lcd">Utilisation avec l'écran LCD</h3>
-<p>Le module I2C pour LCD (souvent un PCF8574) est un petit circuit imprimé qui se soude directement à l'arrière de l'écran LCD. Il se connecte à l'Arduino avec 4 fils :
-- VCC (Alimentation 5V)
-- GND (Masse)
-- SDA (Broche SDA de l'Arduino - A4 sur UNO, 21 sur ESP32)
-- SCL (Broche SCL de l'Arduino - A5 sur UNO, 22 sur ESP32)</p>
-<p><strong>Librairies nécessaires :</strong>
-Pour utiliser un écran LCD avec un module I2C, la librairie <code>LiquidCrystal_I2C</code> est couramment utilisée. Elle nécessite souvent la librairie <code>Wire</code> pour la communication I2C.</p>
-<p><strong>Exemple de code (Arduino UNO) :</strong>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Wire.h&gt;</span><span class="c1"> </span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;LiquidCrystal_I2C.h&gt;</span>
+<h2 id="1-interruptions-serie-avec-serialread-toggle-led">1. Interruptions Série avec <code>Serial.read()</code> (Toggle LED)</h2>
+<p>Les interruptions sont des mécanismes qui permettent au microcontrôleur de suspendre son exécution normale pour traiter un événement urgent. Pour la communication série, cela signifie que vous pouvez réagir immédiatement à la réception de données sans avoir à vérifier constamment le port série dans votre <code>loop()</code>.</p>
+<h3 id="la-methode-serialevent">La méthode <code>SerialEvent()</code></h3>
+<p>L'IDE Arduino propose une fonction spéciale, <code>SerialEvent()</code>, qui est appelée automatiquement après chaque <code>loop()</code> si des données sont disponibles dans le buffer série. Bien que ce ne soit pas une "vraie" interruption matérielle au sens strict, elle fonctionne comme une interruption logicielle et est très utile pour gérer les communications série de manière non bloquante.</p>
+<p><strong>Fonctionnement :</strong>
+- <code>SerialEvent()</code> est déclarée sans paramètre ni type de retour (<code>void SerialEvent()</code>).
+- Le code à l'intérieur de <code>SerialEvent()</code> est exécuté dès que des données série arrivent, mais seulement après la fin de la fonction <code>loop()</code>.</p>
+<p><strong>Exemple complet : Contrôle d'une LED par commandes série ("ON" / "OFF")</strong>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Définition de la broche de la LED</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">const</span><span class="w"> </span><span class="n">byte</span><span class="w"> </span><span class="n">LED_PIN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">13</span><span class="p">;</span><span class="w"> </span><span class="c1">// Utilisation de la LED intégrée sur la plupart des cartes Arduino</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// Définir l&#39;adresse I2C de l&#39;écran LCD</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">// Les adresses communes sont 0x27 ou 0x3F, cela peut varier selon le fabricant.</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">LiquidCrystal_I2C</span><span class="w"> </span><span class="nf">lcd</span><span class="p">(</span><span class="mh">0x27</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w">  </span><span class="c1">// Adresse, colonnes, lignes</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="n">lcd</span><span class="p">.</span><span class="n">init</span><span class="p">();</span><span class="w">      </span><span class="c1">// Initialise l&#39;écran LCD</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="n">lcd</span><span class="p">.</span><span class="n">backlight</span><span class="p">();</span><span class="w"> </span><span class="c1">// Allume le rétroéclairage</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Affiche le texte sur l&#39;écran</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">}</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="c1">// Rien à faire ici pour cet exemple simple</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">}</span>
-</span></code></pre></div></p>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// Variable pour stocker l&#39;état de la LED</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">// Bien que non volatile pour SerialEvent car le compilateur comprend que la LED est contrôlée par digitalWrite</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1">// et les données série sont gérées dans un contexte plus &quot;main loop friendly&quot;,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1">// nous laissons la LED gérée par le code principal pour cet exemple.</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">byte</span><span class="w"> </span><span class="n">ledState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LOW</span><span class="p">;</span><span class="w"> </span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1">// Variable pour stocker les données reçues via le port série</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">String</span><span class="w"> </span><span class="n">receivedCommand</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="c1">// Initialise la communication série à 9600 bauds</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">  </span><span class="c1">// Configure la broche de la LED comme une sortie</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Arduino est prêt. Envoyez &#39;ON&#39; ou &#39;OFF&#39; par le moniteur série.&quot;</span><span class="p">);</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;La commande doit être suivie d&#39;un retour à la ligne (</span><span class="se">\\</span><span class="s">n).&quot;</span><span class="p">);</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="p">}</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">  </span><span class="c1">// Le code principal continue de s&#39;exécuter ici.</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">  </span><span class="c1">// La LED est allumée ou éteinte en fonction de &#39;ledState&#39;.</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">ledState</span><span class="p">);</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">  </span><span class="c1">// Vous pouvez ajouter d&#39;autres tâches non bloquantes ici,</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">  </span><span class="c1">// comme lire d&#39;autres capteurs, faire clignoter une autre LED, etc.</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">  </span><span class="c1">// delay(100); // Pour éviter une boucle trop rapide si aucune autre tâche</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="p">}</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="c1">// Cette fonction est appelée automatiquement par l&#39;IDE Arduino après chaque appel à loop()</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="c1">// si des données sont disponibles dans le buffer série.</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="kt">void</span><span class="w"> </span><span class="nf">serialEvent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">Serial</span><span class="p">.</span><span class="n">available</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">    </span><span class="c1">// Lit le prochain caractère disponible</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">inChar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="n">Serial</span><span class="p">.</span><span class="n">read</span><span class="p">();</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">    </span><span class="c1">// Ajoute le caractère à la chaîne de commande reçue</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">    </span><span class="n">receivedCommand</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">inChar</span><span class="p">;</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">    </span><span class="c1">// Si un caractère de fin de ligne (&#39;\n&#39;) est reçu, cela signifie que la commande est complète</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">inChar</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">      </span><span class="c1">// Nettoie la chaîne en retirant les caractères d&#39;espacement (espace, \r, \n)</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="w">      </span><span class="n">receivedCommand</span><span class="p">.</span><span class="n">trim</span><span class="p">();</span>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="w">      </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Commande reçue: &#39;&quot;</span><span class="p">);</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="w">      </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">receivedCommand</span><span class="p">);</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="w">      </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;&#39;&quot;</span><span class="p">);</span>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="w">      </span><span class="c1">// Traite la commande reçue</span>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">receivedCommand</span><span class="p">.</span><span class="n">equalsIgnoreCase</span><span class="p">(</span><span class="s">&quot;ON&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="w">        </span><span class="n">ledState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">HIGH</span><span class="p">;</span><span class="w"> </span><span class="c1">// Allume la LED</span>
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="w">        </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;LED est ON.&quot;</span><span class="p">);</span>
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">receivedCommand</span><span class="p">.</span><span class="n">equalsIgnoreCase</span><span class="p">(</span><span class="s">&quot;OFF&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a><span class="w">        </span><span class="n">ledState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LOW</span><span class="p">;</span><span class="w">  </span><span class="c1">// Éteint la LED</span>
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a><span class="w">        </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;LED est OFF.&quot;</span><span class="p">);</span>
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a><span class="w">        </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Commande invalide. Utilisez &#39;ON&#39; ou &#39;OFF&#39;.&quot;</span><span class="p">);</span>
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="w">      </span><span class="c1">// Réinitialise la chaîne de commande pour la prochaine réception</span>
+</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a><span class="w">      </span><span class="n">receivedCommand</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span>
+</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a><span class="p">}</span>
+</span></code></pre></div>
+Dans cet exemple, la <code>loop()</code> n'est pas bloquée par l'attente de données série. <code>SerialEvent()</code> gère la réception en arrière-plan (entre deux exécutions de <code>loop()</code>), permettant au programme principal de rester réactif.</p>
 <hr />
-<h2 id="2-le-servomoteur">2. Le Servomoteur</h2>
-<p>Un <strong>servomoteur</strong> est un type de moteur qui permet un contrôle précis de sa position angulaire. Contrairement aux moteurs DC qui tournent en continu, un servomoteur tourne vers une position spécifique et la maintient. Ils sont très utilisés en robotique, pour les modélismes et dans les systèmes automatisés.</p>
-<p><img alt="Servomotor Connection" class="center shadow" src="../../assets/images/servomotor_connection.jpg" /></p>
-<h3 id="alimentation-des-servomoteurs-source-externe">Alimentation des servomoteurs (Source externe)</h3>
-<p>Les servomoteurs, surtout les plus gros, peuvent consommer un courant significatif. L'alimentation directe depuis l'Arduino est souvent insuffisante et peut endommager la carte ou provoquer des comportements instables. Il est fortement recommandé d'utiliser une source d'alimentation externe.</p>
-<div class="admonition warning">
-<p class="admonition-title">Masse Commune (Ground Commun)</p>
-<p>Lorsque vous utilisez une alimentation externe pour le servomoteur, il est <strong>impératif</strong> de connecter la <strong>masse (GND) de l'Arduino</strong> avec la <strong>masse (GND) de votre alimentation externe</strong>. Sans cette masse commune, le servomoteur ne recevra pas de signal de référence correct et ne fonctionnera pas.</p>
-</div>
-<p><img alt="Servomotor External Power" class="center shadow" src="../../assets/images/servomotor_external_power.png" /></p>
-<h3 id="comment-ca-marche">Comment ça marche ?</h3>
-<p>Les servomoteurs sont contrôlés par un signal <strong>PWM (Pulse-Width Modulation)</strong>. C'est crucial de noter que sans un signal PWM approprié, le servomoteur ne fonctionnera pas correctement. L'angle de rotation est déterminé par la durée (largeur) de l'impulsion envoyée sur le fil de données.
-- Une impulsion d'environ 1 ms (milliseconde) peut faire tourner le servo à 0 degrés.
-- Une impulsion d'environ 1.5 ms peut le faire tourner à 90 degrés (position centrale).
-- Une impulsion d'environ 2 ms peut le faire tourner à 180 degrés.</p>
-<p><strong>Connexion :</strong>
-Un servomoteur a généralement trois fils :
-- <strong>Marron/Noir</strong> : Masse (GND)
-- <strong>Rouge</strong> : Alimentation (VCC, souvent 5V)
-- <strong>Orange/Jaune</strong> : Signal (connecté à une broche PWM de l'Arduino)</p>
-<p><strong>Librairie nécessaire :</strong>
-La librairie <code>Servo.h</code> est intégrée à l'IDE Arduino et simplifie grandement le contrôle des servomoteurs.</p>
-<p><strong>Exemple de code (Arduino UNO) :</strong>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Servo.h&gt;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">Servo</span><span class="w"> </span><span class="n">monServo</span><span class="p">;</span><span class="w">  </span><span class="c1">// Crée un objet servo</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="n">monServo</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span><span class="w"> </span><span class="c1">// Attache le servo à la broche 9 (broche PWM)</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">}</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="n">monServo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w">   </span><span class="c1">// Met le servo à 0 degrés</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">         </span><span class="c1">// Attend 1 seconde</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="n">monServo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span><span class="w">  </span><span class="c1">// Met le servo à 90 degrés</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span><span class="n">monServo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">180</span><span class="p">);</span><span class="w"> </span><span class="c1">// Met le servo à 180 degrés</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="p">}</span>
-</span></code></pre></div></p>
-<hr />
-<h2 id="3-le-capteur-de-temperature-et-dhumidite-dht11">3. Le Capteur de Température et d'Humidité DHT11</h2>
-<p>Le <strong>DHT11</strong> est un capteur numérique bas coût très populaire pour mesurer la température et l'humidité de l'air. Il est facile à utiliser et offre une précision suffisante pour de nombreux projets.</p>
-<p><img alt="DHT11 Connection" class="center shadow" src="../../assets/images/dht11_connection.jpg" /></p>
-<h3 id="caracteristiques">Caractéristiques :</h3>
-<ul>
-<li><strong>Plage de mesure d'humidité</strong> : 20-95% RH (avec une précision de ±5%)</li>
-<li><strong>Plage de mesure de température</strong> : 0-50°C (avec une précision de ±2°C)</li>
-<li><strong>Taux d'échantillonnage</strong> : 1 Hz (une lecture par seconde)</li>
-</ul>
-<h3 id="connexion">Connexion :</h3>
-<p>Le DHT11 a 3 ou 4 broches, selon le module :
-- <strong>VCC (+)</strong> : Alimentation (3.3V ou 5V)
-- <strong>GND (-)</strong> : Masse
-- <strong>Data (S)</strong> : Broche de données (nécessite une résistance de pull-up de 10kΩ si elle n'est pas intégrée au module)</p>
-<p>La broche de données est connectée à une broche numérique de l'Arduino.</p>
-<h3 id="librairie-necessaire">Librairie nécessaire :</h3>
-<p>Pour faciliter l'utilisation du DHT11, la librairie <code>DHT sensor library</code> d'Adafruit est fortement recommandée. Elle gère la communication complexe avec le capteur.</p>
-<p><strong>Exemple de code (Arduino UNO) :</strong>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DHT.h&quot;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="cp">#define DHTPIN 2    </span><span class="c1">// Broche numérique à laquelle le DHT11 est connecté</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="cp">#define DHTTYPE DHT11 </span><span class="c1">// Type de capteur : DHT11</span>
+<h2 id="2-interruptions-sur-broches-digitales-arduino-uno-toggle-led">2. Interruptions sur Broches Digitales (Arduino UNO) (Toggle LED)</h2>
+<p>Les interruptions externes permettent de détecter un changement d'état sur une broche numérique et d'exécuter une fonction spécifique (ISR - Interrupt Service Routine) immédiatement. Cela est crucial pour les événements sensibles au temps, comme la lecture d'un encodeur rotatif ou un bouton-poussoir.</p>
+<h3 id="broches-dinterruption-sur-arduino-uno">Broches d'interruption sur Arduino UNO</h3>
+<p>Sur l'Arduino UNO (basé sur l'ATmega328P), seules certaines broches peuvent être utilisées comme interruptions externes :
+- <strong>Broche 2 (Interrupt 0)</strong>
+- <strong>Broche 3 (Interrupt 1)</strong></p>
+<p>Ces broches sont appelées "broches d'interruption" ou "interrupt pins".</p>
+<h3 id="la-fonction-attachinterrupt">La fonction <code>attachInterrupt()</code></h3>
+<p>Pour configurer une interruption externe, on utilise la fonction <code>attachInterrupt()</code> :</p>
+<p><strong>Syntaxe :</strong>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">attachInterrupt</span><span class="p">(</span><span class="n">digitalPinToInterrupt</span><span class="p">(</span><span class="n">pin</span><span class="p">),</span><span class="w"> </span><span class="n">ISR</span><span class="p">,</span><span class="w"> </span><span class="n">mode</span><span class="p">);</span>
+</span></code></pre></div>
+- <code>digitalPinToInterrupt(pin)</code> : Convertit le numéro de broche Arduino en numéro d'interruption. Pour l'UNO, <code>digitalPinToInterrupt(2)</code> est 0, et <code>digitalPinToInterrupt(3)</code> est 1.
+- <code>ISR</code> : La fonction de service d'interruption à exécuter lorsque l'événement se produit. Cette fonction ne doit pas prendre de paramètres et ne doit pas retourner de valeur (<code>void</code>).
+- <code>mode</code> : Définit quand l'interruption doit être déclenchée :
+    - <code>LOW</code> : Quand la broche est à l'état BAS.
+    - <code>CHANGE</code> : Quand la broche change d'état (de BAS à HAUT, ou de HAUT à BAS).
+    - <code>RISING</code> : Quand la broche passe de BAS à HAUT.
+    - <code>FALLING</code> : Quand la broche passe de HAUT à BAS.</p>
+<p><strong>Exemple complet : Contrôle d'une LED par un bouton-poussoir (Digital Pin Interrupt)</strong>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Définition de la broche de la LED (LED intégrée sur la plupart des cartes Arduino)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">const</span><span class="w"> </span><span class="n">byte</span><span class="w"> </span><span class="n">LED_PIN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">13</span><span class="p">;</span><span class="w"> </span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1">// Définition de la broche du bouton (doit être une broche d&#39;interruption sur l&#39;UNO)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">const</span><span class="w"> </span><span class="n">byte</span><span class="w"> </span><span class="n">BUTTON_PIN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// Broche 2 correspond à Interrupt 0 sur Arduino UNO</span>
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">DHT</span><span class="w"> </span><span class="nf">dht</span><span class="p">(</span><span class="n">DHTPIN</span><span class="p">,</span><span class="w"> </span><span class="n">DHTTYPE</span><span class="p">);</span><span class="w"> </span><span class="c1">// Initialise le capteur DHT</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;DHT11 Test!&quot;</span><span class="p">);</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="n">dht</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"> </span><span class="c1">// Démarre le capteur DHT</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="p">}</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">  </span><span class="c1">// Attendre quelques secondes entre les mesures.</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
-</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">  </span><span class="c1">// Lire l&#39;humidité.</span>
-</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">readHumidity</span><span class="p">();</span>
-</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">  </span><span class="c1">// Lire la température en Celsius.</span>
-</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">readTemperature</span><span class="p">();</span>
-</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
-</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">  </span><span class="c1">// Vérifier si la lecture a échoué, sinon afficher les valeurs.</span>
-</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isnan</span><span class="p">(</span><span class="n">h</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">isnan</span><span class="p">(</span><span class="n">t</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Failed to read from DHT sensor!&quot;</span><span class="p">);</span>
-</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Humidity: &quot;</span><span class="p">);</span>
-</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">h</span><span class="p">);</span>
-</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; %    &quot;</span><span class="p">);</span>
-</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Temperature: &quot;</span><span class="p">);</span>
-</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
-</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot; *C&quot;</span><span class="p">);</span>
-</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="p">}</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1">// Variable partagée entre le code principal (loop) et l&#39;ISR.</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1">// Doit être déclarée &#39;volatile&#39; pour garantir que le compilateur ne l&#39;optimise pas</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1">// et que sa valeur est toujours relue de la mémoire.</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">volatile</span><span class="w"> </span><span class="n">byte</span><span class="w"> </span><span class="n">ledState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LOW</span><span class="p">;</span><span class="w"> </span><span class="c1">// État initial de la LED: éteinte</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="c1">// Configure la broche de la LED comme une sortie</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">  </span><span class="c1">// Configure la broche du bouton comme une entrée avec une résistance de pull-up interne.</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">  </span><span class="c1">// Cela garantit que la broche est HIGH quand le bouton n&#39;est pas appuyé.</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">BUTTON_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT_PULLUP</span><span class="p">);</span><span class="w"> </span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">  </span><span class="c1">// Initialise la communication série pour le débogage</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Appuyez sur le bouton connecté à la broche 2 pour allumer/éteindre la LED.&quot;</span><span class="p">);</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">  </span><span class="c1">// Attache l&#39;interruption à la broche du bouton.</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">  </span><span class="c1">// digitalPinToInterrupt(BUTTON_PIN) convertit le numéro de broche (2) en numéro d&#39;interruption (0).</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">  </span><span class="c1">// toggleLED est la fonction de service d&#39;interruption (ISR) qui sera appelée.</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">  </span><span class="c1">// FALLING signifie que l&#39;ISR sera déclenchée lorsque la broche passe de HIGH à LOW (bouton appuyé).</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">  </span><span class="n">attachInterrupt</span><span class="p">(</span><span class="n">digitalPinToInterrupt</span><span class="p">(</span><span class="n">BUTTON_PIN</span><span class="p">),</span><span class="w"> </span><span class="n">toggleLED</span><span class="p">,</span><span class="w"> </span><span class="n">FALLING</span><span class="p">);</span><span class="w"> </span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="p">}</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">  </span><span class="c1">// Le code principal s&#39;exécute ici.</span>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">  </span><span class="c1">// Il met à jour l&#39;état de la LED en fonction de la variable &#39;ledState&#39;</span>
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">  </span><span class="c1">// qui est modifiée par l&#39;ISR.</span>
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">ledState</span><span class="p">);</span>
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="w">  </span><span class="c1">// D&#39;autres tâches non sensibles au temps peuvent être exécutées ici.</span>
+</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a><span class="w">  </span><span class="c1">// Par exemple, lire des capteurs, gérer d&#39;autres sorties, etc.</span>
+</span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a><span class="p">}</span>
+</span><span id="__span-2-38"><a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>
+</span><span id="__span-2-39"><a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a><span class="c1">// Fonction de service d&#39;interruption (ISR) pour le bouton.</span>
+</span><span id="__span-2-40"><a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a><span class="c1">// Elle est appelée lorsque le bouton est appuyé (FALLING edge).</span>
+</span><span id="__span-2-41"><a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a><span class="kt">void</span><span class="w"> </span><span class="nf">toggleLED</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-42"><a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a><span class="w">  </span><span class="c1">// Inverse l&#39;état de la LED (HIGH devient LOW, LOW devient HIGH).</span>
+</span><span id="__span-2-43"><a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a><span class="w">  </span><span class="n">ledState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="n">ledState</span><span class="p">;</span><span class="w"> </span>
+</span><span id="__span-2-44"><a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a><span class="p">}</span>
 </span></code></pre></div></p>
+<p><strong>Règles pour les ISR :</strong>
+- <strong>Doivent être courtes et rapides</strong> : Le code à l'intérieur d'une ISR bloque d'autres interruptions (sauf les plus prioritaires).
+- <strong>Pas de <code>delay()</code></strong> : La fonction <code>delay()</code> ne fonctionne pas dans une ISR.
+- <strong>Pas de <code>Serial.print()</code></strong> : La communication série utilise des interruptions et pourrait causer des conflits. Si vous avez absolument besoin de déboguer à partir d'une ISR, vous pouvez définir un drapeau <code>volatile</code> et l'imprimer dans la <code>loop()</code>.
+- <strong>Les variables partagées avec la <code>loop()</code> doivent être <code>volatile</code></strong> (voir section suivante).</p>
+<hr />
+<h2 id="3-la-notion-de-volatile-pour-les-interruptions">3. La Notion de <code>volatile</code> pour les Interruptions</h2>
+<p>Lorsqu'une variable est utilisée à la fois dans la fonction <code>loop()</code> (ou n'importe quelle partie du code principal) et dans une fonction de service d'interruption (ISR), il est crucial de la déclarer avec le mot-clé <code>volatile</code>.</p>
+<h3 id="pourquoi-volatile">Pourquoi <code>volatile</code> ?</h3>
+<p>Les compilateurs C++ effectuent des optimisations pour rendre le code plus rapide et plus compact. Si une variable n'est pas modifiée explicitement dans la <code>loop()</code>, le compilateur peut supposer que sa valeur ne change pas et décider de la stocker dans un registre interne du microcontrôleur ou de ne pas la relire de la mémoire à chaque fois.</p>
+<p>Or, une ISR peut modifier cette variable à tout moment, indépendamment de la <code>loop()</code>. Sans <code>volatile</code>, la <code>loop()</code> pourrait continuer à utiliser une copie obsolète de la variable (celle qui était dans le registre), conduisant à un comportement inattendu et à des bugs difficiles à diagnostiquer.</p>
+<p>Le mot-clé <code>volatile</code> indique au compilateur que la variable peut être modifiée à tout moment par des événements externes (comme une interruption) et qu'il doit toujours la relire directement de la mémoire à chaque fois qu'elle est accédée, sans aucune optimisation qui pourrait empêcher cela.</p>
+<p><strong>Exemple : <code>volatile</code> dans l'exemple du bouton</strong>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// ...</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">volatile</span><span class="w"> </span><span class="n">byte</span><span class="w"> </span><span class="n">ledState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LOW</span><span class="p">;</span><span class="w"> </span><span class="c1">// ledState est partagée entre loop() et toggleLED()</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1">// ...</span>
+</span></code></pre></div>
+Dans cet exemple, <code>ledState</code> est déclarée <code>volatile</code> car <code>loop()</code> la lit (<code>digitalWrite(LED_PIN, ledState);</code>) et <code>toggleLED()</code> (l'ISR) la modifie (<code>ledState = !ledState;</code>).</p>
+<h3 id="utilisation-pratique">Utilisation pratique :</h3>
+<ul>
+<li>Déclarez toujours <code>volatile</code> toute variable qui est lue ou écrite par une ISR ET par le code principal.</li>
+<li>Les types de données pour les variables <code>volatile</code> devraient être des types atomiques (byte, int, long) et si possible de 8 bits ou 16 bits pour les microcontrôleurs 8 bits comme l'UNO, afin d'éviter les problèmes de lecture/écriture multi-octets non atomiques qui pourraient être corrompus par une interruption.</li>
+</ul>
 
 
 

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://tousignantsimon-nano.github.io/notes_de_cours/semaine_7_arduino_concepts/">
+        <link rel="canonical" href="https://tousignantsimon-nano.github.io/notes_de_cours/semaine_11_i2c_servo_dht11/">
       
       
-        <link rel="prev" href="../semaine_6_samba/">
+        <link rel="prev" href="../semaine_10_arduino_concepts/">
       
       
-        <link rel="next" href="../semaine_8_i2c_servo_dht11/">
+        <link rel="next" href="../semaine_12_interrupts_volatile/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Arduino concepts - Nano-ordinateurs 420-3A3-VI</title>
+        <title>I2C, Servomoteur et DHT11 - Nano-ordinateurs 420-3A3-VI</title>
       
     
     
@@ -123,7 +123,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#arduino-concepts-avances" class="md-skip">
+        <a href="#arduino-i2c-servomoteur-et-capteur-dht11" class="md-skip">
           Aller au contenu
         </a>
       
@@ -159,7 +159,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Arduino concepts
+              I2C, Servomoteur et DHT11
             
           </span>
         </div>
@@ -373,6 +373,24 @@
         
   
   
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../semaine_10_arduino_concepts/" class="md-tabs__link">
+          
+  
+  Semaine 10
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
     
   
   
@@ -382,7 +400,7 @@
         <a href="./" class="md-tabs__link">
           
   
-  Semaine 7
+  Semaine 11
 
         </a>
       </li>
@@ -397,28 +415,10 @@
     
     
       <li class="md-tabs__item">
-        <a href="../semaine_8_i2c_servo_dht11/" class="md-tabs__link">
+        <a href="../semaine_12_interrupts_volatile/" class="md-tabs__link">
           
   
-  Semaine 8
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../semaine_9_interrupts_volatile/" class="md-tabs__link">
-          
-  
-  Semaine 9
+  Semaine 12
 
         </a>
       </li>
@@ -1153,6 +1153,72 @@
       
   
   
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Semaine 10
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Semaine 10
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semaine_10_arduino_concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arduino concepts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -1171,24 +1237,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    Semaine 7
+    Semaine 11
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            Semaine 7
+            Semaine 11
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1212,7 +1278,7 @@
           
   
   <span class="md-ellipsis">
-    Arduino concepts
+    I2C, Servomoteur et DHT11
   </span>
   
 
@@ -1223,7 +1289,7 @@
         
   
   <span class="md-ellipsis">
-    Arduino concepts
+    I2C, Servomoteur et DHT11
   </span>
   
 
@@ -1245,46 +1311,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-rappel-des-commandes-de-base" class="md-nav__link">
+  <a href="#1-lecran-lcd-et-le-module-i2c" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Rappel des commandes de base
+      1. L'écran LCD et le module I2C
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-pwm-pulse-width-modulation" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. PWM (Pulse-Width Modulation)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-adc-et-dac-le-monde-analogique-et-numerique" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. ADC et DAC : Le monde analogique et numérique
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. ADC et DAC : Le monde analogique et numérique">
+    <nav class="md-nav" aria-label="1. L'écran LCD et le module I2C">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#adc-analog-to-digital-converter" class="md-nav__link">
+  <a href="#quest-ce-que-li2c-inter-integrated-circuit" class="md-nav__link">
     <span class="md-ellipsis">
-      ADC (Analog-to-Digital Converter)
+      Qu'est-ce que l'I2C ? (Inter-Integrated Circuit)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dac-digital-to-analog-converter" class="md-nav__link">
+  <a href="#utilisation-avec-lecran-lcd" class="md-nav__link">
     <span class="md-ellipsis">
-      DAC (Digital-to-Analog Converter)
+      Utilisation avec l'écran LCD
     </span>
   </a>
   
@@ -1296,11 +1344,77 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-la-fonction-map" class="md-nav__link">
+  <a href="#2-le-servomoteur" class="md-nav__link">
     <span class="md-ellipsis">
-      4. La fonction map()
+      2. Le Servomoteur
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2. Le Servomoteur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alimentation-des-servomoteurs-source-externe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alimentation des servomoteurs (Source externe)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-ca-marche" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comment ça marche ?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-le-capteur-de-temperature-et-dhumidite-dht11" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Le Capteur de Température et d'Humidité DHT11
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Le Capteur de Température et d'Humidité DHT11">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caracteristiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caractéristiques :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connexion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connexion :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#librairie-necessaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Librairie nécessaire :
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1337,72 +1451,6 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Semaine 8
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            Semaine 8
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../semaine_8_i2c_servo_dht11/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    I2C, Servomoteur et DHT11
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
@@ -1410,7 +1458,7 @@
             
   
   <span class="md-ellipsis">
-    Semaine 9
+    Semaine 12
   </span>
   
 
@@ -1420,7 +1468,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            Semaine 9
+            Semaine 12
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1431,7 +1479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../semaine_9_interrupts_volatile/" class="md-nav__link">
+      <a href="../semaine_12_interrupts_volatile/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2619,112 +2667,142 @@
   
 
 
-<h1 id="arduino-concepts-avances">Arduino : Concepts avancés</h1>
-<p>Cette semaine, nous allons approfondir certains concepts clés pour mieux maîtriser l'Arduino.</p>
+<h1 id="arduino-i2c-servomoteur-et-capteur-dht11">Arduino : I2C, Servomoteur et Capteur DHT11</h1>
+<p>Cette semaine, nous allons explorer des composants couramment utilisés avec l'Arduino : l'écran LCD via un module I2C, les servomoteurs et le capteur de température/humidité DHT11.</p>
 <hr />
-<h2 id="1-rappel-des-commandes-de-base">1. Rappel des commandes de base</h2>
-<p>Avant de plonger dans de nouveaux sujets, voici un bref rappel des fonctions que nous avons vues la semaine dernière :</p>
-<ul>
-<li><strong>Communication série</strong> :</li>
-<li><code>Serial.begin(9600)</code> : Initialise la communication série à 9600 bauds.</li>
-<li><code>Serial.print("Hello")</code> : Affiche du texte sans saut de ligne.</li>
-<li>
-<p><code>Serial.println("World")</code> : Affiche du texte avec un saut de ligne.</p>
-</li>
-<li>
-<p><strong>Entrées/sorties numériques</strong> :</p>
-</li>
-<li><code>pinMode(pin, OUTPUT)</code> : Configure une broche en mode sortie.</li>
-<li><code>pinMode(pin, INPUT)</code> : Configure une broche en mode entrée.</li>
-<li><code>digitalWrite(pin, HIGH)</code> : Envoie un signal haut (5V) sur une broche.</li>
-<li>
-<p><code>digitalRead(pin)</code> : Lit l'état d'une broche numérique (HIGH ou LOW).</p>
-</li>
-<li>
-<p><strong>Entrées/sorties analogiques</strong> :</p>
-</li>
-<li><code>analogRead(pin)</code> : Lit une valeur analogique (de 0 à 1023).</li>
-<li><code>analogWrite(pin, value)</code> : Envoie un signal PWM (simulant une sortie analogique).</li>
-</ul>
-<hr />
-<h2 id="2-pwm-pulse-width-modulation">2. PWM (Pulse-Width Modulation)</h2>
-<p>La <strong>modulation de largeur d'impulsion (PWM)</strong> est une technique utilisée pour simuler une sortie analogique à l'aide d'un signal numérique. Au lieu d'une tension constante, le PWM envoie des impulsions carrées à une fréquence fixe.</p>
-<p><img alt="PWM Diagram" class="center shadow" src="../../assets/images/pwm_diagram.png" /></p>
-<ul>
-<li><strong>Duty Cycle (Rapport cyclique)</strong> : C'est le pourcentage de temps pendant lequel le signal est à l'état HAUT.</li>
-<li>0% : Le signal est toujours BAS (0V).</li>
-<li>50% : Le signal est HAUT la moitié du temps (environ 2.5V de moyenne).</li>
-<li>
-<p>100% : Le signal est toujours HAUT (5V).</p>
-</li>
-<li>
-<p><strong><code>analogWrite(pin, value)</code></strong> :</p>
-</li>
-<li><code>pin</code> : Doit être une broche PWM (marquée d'un tilde <code>~</code> sur la plupart des cartes Arduino, comme les broches 3, 5, 6, 9, 10, 11 sur une UNO).</li>
-<li><code>value</code> : Un entier de <strong>0</strong> (0% de rapport cyclique) à <strong>255</strong> (100% de rapport cyclique).</li>
-</ul>
-<p><strong>Exemple : Faire varier l'intensité d'une LED</strong>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span><span class="w"> </span><span class="c1">// Broche PWM</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="p">}</span>
+<h2 id="1-lecran-lcd-et-le-module-i2c">1. L'écran LCD et le module I2C</h2>
+<p>Un écran LCD (Liquid Crystal Display) est un composant essentiel pour afficher des informations de manière lisible. Les écrans LCD 16x02 (16 caractères sur 2 lignes) sont très populaires. Pour simplifier leur câblage, on utilise souvent un module I2C.</p>
+<p><img alt="I2C LCD Connection" class="center shadow" src="../../assets/images/i2c_lcd_connection.jpg" /></p>
+<p><img alt="I2C Bus Connection" class="center shadow" src="../../assets/images/servo_connection.webp" /></p>
+<h3 id="quest-ce-que-li2c-inter-integrated-circuit">Qu'est-ce que l'I2C ? (Inter-Integrated Circuit)</h3>
+<p>L'<strong>I2C</strong> est un protocole de communication série qui permet à plusieurs "maîtres" (comme l'Arduino) de communiquer avec plusieurs "esclaves" (comme le module I2C de l'écran LCD) en utilisant seulement deux fils :
+- <strong>SDA (Serial Data Line)</strong> : Pour l'envoi et la réception des données.
+- <strong>SCL (Serial Clock Line)</strong> : Pour la synchronisation des données.</p>
+<p><strong>Avantages de l'I2C :</strong>
+- <strong>Simplicité de câblage</strong> : Réduit le nombre de broches nécessaires sur l'Arduino (seulement 2 broches, plus l'alimentation).
+- <strong>Multiples périphériques</strong> : Plusieurs composants I2C peuvent être connectés sur les mêmes deux fils, chacun ayant une adresse unique.</p>
+<h3 id="utilisation-avec-lecran-lcd">Utilisation avec l'écran LCD</h3>
+<p>Le module I2C pour LCD (souvent un PCF8574) est un petit circuit imprimé qui se soude directement à l'arrière de l'écran LCD. Il se connecte à l'Arduino avec 4 fils :
+- VCC (Alimentation 5V)
+- GND (Masse)
+- SDA (Broche SDA de l'Arduino - A4 sur UNO, 21 sur ESP32)
+- SCL (Broche SCL de l'Arduino - A5 sur UNO, 22 sur ESP32)</p>
+<p><strong>Librairies nécessaires :</strong>
+Pour utiliser un écran LCD avec un module I2C, la librairie <code>LiquidCrystal_I2C</code> est couramment utilisée. Elle nécessite souvent la librairie <code>Wire</code> pour la communication I2C.</p>
+<p><strong>Exemple de code (Arduino UNO) :</strong>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Wire.h&gt;</span><span class="c1"> </span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;LiquidCrystal_I2C.h&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// Définir l&#39;adresse I2C de l&#39;écran LCD</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">// Les adresses communes sont 0x27 ou 0x3F, cela peut varier selon le fabricant.</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">LiquidCrystal_I2C</span><span class="w"> </span><span class="nf">lcd</span><span class="p">(</span><span class="mh">0x27</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w">  </span><span class="c1">// Adresse, colonnes, lignes</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="n">lcd</span><span class="p">.</span><span class="n">init</span><span class="p">();</span><span class="w">      </span><span class="c1">// Initialise l&#39;écran LCD</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="n">lcd</span><span class="p">.</span><span class="n">backlight</span><span class="p">();</span><span class="w"> </span><span class="c1">// Allume le rétroéclairage</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Affiche le texte sur l&#39;écran</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">}</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="c1">// Rien à faire ici pour cet exemple simple</span>
 </span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">}</span>
 </span></code></pre></div></p>
 <hr />
-<h2 id="3-adc-et-dac-le-monde-analogique-et-numerique">3. ADC et DAC : Le monde analogique et numérique</h2>
-<p><img alt="ADC DAC Diagram" class="center shadow" src="../../assets/images/adc_dac_diagram.png" /></p>
-<h3 id="adc-analog-to-digital-converter">ADC (Analog-to-Digital Converter)</h3>
-<p>L'<strong>ADC</strong> convertit une tension analogique (comme celle d'un potentiomètre) en une valeur numérique que le microcontrôleur peut lire.</p>
-<ul>
-<li><strong>Résolution</strong> : La précision de la conversion.</li>
-<li><strong>10 bits (Arduino UNO)</strong> : La tension (0-5V) est divisée en <strong>1024</strong> niveaux (2^10). La fonction <code>analogRead()</code> retourne donc une valeur entre <strong>0 et 1023</strong>.</li>
-<li><strong>8 bits</strong> : La tension serait divisée en <strong>256</strong> niveaux (2^8), offrant une précision moindre.</li>
-</ul>
-<p>Un ADC 10 bits est donc plus précis qu'un ADC 8 bits car il peut détecter de plus petites variations de tension.</p>
-<h3 id="dac-digital-to-analog-converter">DAC (Digital-to-Analog Converter)</h3>
-<p>Le <strong>DAC</strong> fait l'inverse : il convertit une valeur numérique en une tension analogique réelle. La plupart des cartes Arduino (comme la UNO) n'ont <strong>pas de vrai DAC</strong>. Elles simulent une sortie analogique avec le <strong>PWM</strong>.</p>
-<p>Certaines cartes, comme l'Arduino Due ou l'ESP32, possèdent de vrais DAC.</p>
+<h2 id="2-le-servomoteur">2. Le Servomoteur</h2>
+<p>Un <strong>servomoteur</strong> est un type de moteur qui permet un contrôle précis de sa position angulaire. Contrairement aux moteurs DC qui tournent en continu, un servomoteur tourne vers une position spécifique et la maintient. Ils sont très utilisés en robotique, pour les modélismes et dans les systèmes automatisés.</p>
+<p><img alt="Servomotor Connection" class="center shadow" src="../../assets/images/servomotor_connection.jpg" /></p>
+<h3 id="alimentation-des-servomoteurs-source-externe">Alimentation des servomoteurs (Source externe)</h3>
+<p>Les servomoteurs, surtout les plus gros, peuvent consommer un courant significatif. L'alimentation directe depuis l'Arduino est souvent insuffisante et peut endommager la carte ou provoquer des comportements instables. Il est fortement recommandé d'utiliser une source d'alimentation externe.</p>
+<div class="admonition warning">
+<p class="admonition-title">Masse Commune (Ground Commun)</p>
+<p>Lorsque vous utilisez une alimentation externe pour le servomoteur, il est <strong>impératif</strong> de connecter la <strong>masse (GND) de l'Arduino</strong> avec la <strong>masse (GND) de votre alimentation externe</strong>. Sans cette masse commune, le servomoteur ne recevra pas de signal de référence correct et ne fonctionnera pas.</p>
+</div>
+<p><img alt="Servomotor External Power" class="center shadow" src="../../assets/images/servomotor_external_power.png" /></p>
+<h3 id="comment-ca-marche">Comment ça marche ?</h3>
+<p>Les servomoteurs sont contrôlés par un signal <strong>PWM (Pulse-Width Modulation)</strong>. C'est crucial de noter que sans un signal PWM approprié, le servomoteur ne fonctionnera pas correctement. L'angle de rotation est déterminé par la durée (largeur) de l'impulsion envoyée sur le fil de données.
+- Une impulsion d'environ 1 ms (milliseconde) peut faire tourner le servo à 0 degrés.
+- Une impulsion d'environ 1.5 ms peut le faire tourner à 90 degrés (position centrale).
+- Une impulsion d'environ 2 ms peut le faire tourner à 180 degrés.</p>
+<p><strong>Connexion :</strong>
+Un servomoteur a généralement trois fils :
+- <strong>Marron/Noir</strong> : Masse (GND)
+- <strong>Rouge</strong> : Alimentation (VCC, souvent 5V)
+- <strong>Orange/Jaune</strong> : Signal (connecté à une broche PWM de l'Arduino)</p>
+<p><strong>Librairie nécessaire :</strong>
+La librairie <code>Servo.h</code> est intégrée à l'IDE Arduino et simplifie grandement le contrôle des servomoteurs.</p>
+<p><strong>Exemple de code (Arduino UNO) :</strong>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Servo.h&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">Servo</span><span class="w"> </span><span class="n">monServo</span><span class="p">;</span><span class="w">  </span><span class="c1">// Crée un objet servo</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="n">monServo</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span><span class="w"> </span><span class="c1">// Attache le servo à la broche 9 (broche PWM)</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">}</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="n">monServo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w">   </span><span class="c1">// Met le servo à 0 degrés</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">         </span><span class="c1">// Attend 1 seconde</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="n">monServo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span><span class="w">  </span><span class="c1">// Met le servo à 90 degrés</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span><span class="n">monServo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">180</span><span class="p">);</span><span class="w"> </span><span class="c1">// Met le servo à 180 degrés</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="p">}</span>
+</span></code></pre></div></p>
 <hr />
-<h2 id="4-la-fonction-map">4. La fonction <code>map()</code></h2>
-<p>La fonction <code>map()</code> est un outil très pratique pour mettre à l'échelle une valeur d'une plage à une autre.</p>
-<p><strong>Syntaxe</strong> :
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">map</span><span class="p">(</span><span class="n">valeur</span><span class="p">,</span><span class="w"> </span><span class="n">minOrigine</span><span class="p">,</span><span class="w"> </span><span class="n">maxOrigine</span><span class="p">,</span><span class="w"> </span><span class="n">minDest</span><span class="p">,</span><span class="w"> </span><span class="n">maxDest</span><span class="p">);</span>
-</span></code></pre></div>
-- <code>valeur</code> : Le nombre à convertir.
-- <code>minOrigine</code>, <code>maxOrigine</code> : La plage d'origine de la valeur.
-- <code>minDest</code>, <code>maxDest</code> : La plage de destination souhaitée.</p>
-<p><strong>Exemple : Contrôler la luminosité d'une LED avec un potentiomètre</strong></p>
-<p>Le potentiomètre nous donne une valeur de 0 à 1023 (<code>analogRead</code>), mais la LED a besoin d'une valeur de 0 à 255 (<code>analogWrite</code>).</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">potPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A0</span><span class="p">;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">}</span>
+<h2 id="3-le-capteur-de-temperature-et-dhumidite-dht11">3. Le Capteur de Température et d'Humidité DHT11</h2>
+<p>Le <strong>DHT11</strong> est un capteur numérique bas coût très populaire pour mesurer la température et l'humidité de l'air. Il est facile à utiliser et offre une précision suffisante pour de nombreux projets.</p>
+<p><img alt="DHT11 Connection" class="center shadow" src="../../assets/images/dht11_connection.jpg" /></p>
+<h3 id="caracteristiques">Caractéristiques :</h3>
+<ul>
+<li><strong>Plage de mesure d'humidité</strong> : 20-95% RH (avec une précision de ±5%)</li>
+<li><strong>Plage de mesure de température</strong> : 0-50°C (avec une précision de ±2°C)</li>
+<li><strong>Taux d'échantillonnage</strong> : 1 Hz (une lecture par seconde)</li>
+</ul>
+<h3 id="connexion">Connexion :</h3>
+<p>Le DHT11 a 3 ou 4 broches, selon le module :
+- <strong>VCC (+)</strong> : Alimentation (3.3V ou 5V)
+- <strong>GND (-)</strong> : Masse
+- <strong>Data (S)</strong> : Broche de données (nécessite une résistance de pull-up de 10kΩ si elle n'est pas intégrée au module)</p>
+<p>La broche de données est connectée à une broche numérique de l'Arduino.</p>
+<h3 id="librairie-necessaire">Librairie nécessaire :</h3>
+<p>Pour faciliter l'utilisation du DHT11, la librairie <code>DHT sensor library</code> d'Adafruit est fortement recommandée. Elle gère la communication complexe avec le capteur.</p>
+<p><strong>Exemple de code (Arduino UNO) :</strong>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DHT.h&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="cp">#define DHTPIN 2    </span><span class="c1">// Broche numérique à laquelle le DHT11 est connecté</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="cp">#define DHTTYPE DHT11 </span><span class="c1">// Type de capteur : DHT11</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">DHT</span><span class="w"> </span><span class="nf">dht</span><span class="p">(</span><span class="n">DHTPIN</span><span class="p">,</span><span class="w"> </span><span class="n">DHTTYPE</span><span class="p">);</span><span class="w"> </span><span class="c1">// Initialise le capteur DHT</span>
 </span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="c1">// Lire la valeur du potentiomètre (0-1023)</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">potValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">analogRead</span><span class="p">(</span><span class="n">potPin</span><span class="p">);</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;DHT11 Test!&quot;</span><span class="p">);</span>
 </span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="c1">// Mettre à l&#39;échelle cette valeur pour le PWM (0-255)</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">ledValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">map</span><span class="p">(</span><span class="n">potValue</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1023</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">);</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="n">dht</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"> </span><span class="c1">// Démarre le capteur DHT</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="p">}</span>
 </span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">  </span><span class="c1">// Appliquer la valeur à la LED</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">  </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">ledValue</span><span class="p">);</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>Cet exemple est beaucoup plus simple et lisible que de faire le calcul manuellement (<code>ledValue = potValue / 4;</code>).</p>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">  </span><span class="c1">// Attendre quelques secondes entre les mesures.</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">  </span><span class="c1">// Lire l&#39;humidité.</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">readHumidity</span><span class="p">();</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">  </span><span class="c1">// Lire la température en Celsius.</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">readTemperature</span><span class="p">();</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">  </span><span class="c1">// Vérifier si la lecture a échoué, sinon afficher les valeurs.</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isnan</span><span class="p">(</span><span class="n">h</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">isnan</span><span class="p">(</span><span class="n">t</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Failed to read from DHT sensor!&quot;</span><span class="p">);</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Humidity: &quot;</span><span class="p">);</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">h</span><span class="p">);</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; %    &quot;</span><span class="p">);</span>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Temperature: &quot;</span><span class="p">);</span>
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot; *C&quot;</span><span class="p">);</span>
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="p">}</span>
+</span></code></pre></div></p>
 
 
 
